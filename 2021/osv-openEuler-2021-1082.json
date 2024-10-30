@@ -1,0 +1,60 @@
+{
+    "schema_version": "1.6.0",
+    "id": "OESA-2021-1182",
+    "modified": "2021-05-15T00:00:00Z",
+    "published": "2021-05-15T00:00:00Z",
+    "withdrawn": "",
+    "aliases": null,
+    "related": [
+        "CVE-2021-29425"
+    ],
+    "summary": "apache-commons-io security update",
+    "details": "Apache commons IO library is used for developing IO functionality. It contains a collecton of utilities with utility classes, stream implementations, file filters, file comparators, endian transformation classes, and much more.\r\n\r\nSecurity Fix(es):\r\n\r\nIn Apache Commons IO before 2.7, When invoking the method FileNameUtils.normalize with an improper input string, like //../foo , or .. foo , the result would be the same value, thus possibly providing access to files in the parent directory, but not further above (thus limited path traversal), if the calling code would use the result to construct a path value.(CVE-2021-29425)",
+    "severity": null,
+    "affected": [
+        {
+            "package": {
+                "ecosystem": "openEuler-20.03-LTS-SP1",
+                "name": "apache-commons-io",
+                "purl": "pkg:rpm/apache-commons-io@2.6-7.oe1"
+            },
+            "severity": null,
+            "ranges": [
+                {
+                    "type": "ECOSYSTEM",
+                    "repo": "",
+                    "events": [
+                        {
+                            "introduced": "0",
+                            "fixed": "2.6-7.oe1",
+                            "last_affected": "",
+                            "limit": ""
+                        }
+                    ],
+                    "database_specific": null
+                }
+            ],
+            "versions": null,
+            "ecosystem_specific": {
+                "noarch": [
+                    "apache-commons-io-2.6-7.oe1.noarch.rpm",
+                    "apache-commons-io-help-2.6-7.oe1.noarch.rpm"
+                ],
+                "src": [
+                    "apache-commons-io-2.6-7.oe1.src.rpm"
+                ]
+            },
+            "database_specific": null
+        }
+    ],
+    "references": [
+        {
+            "type": "ADVISORY",
+            "url": "https://nvd.nist.gov/vuln/detail/CVE-2021-29425"
+        }
+    ],
+    "credits": null,
+    "database_specific": {
+        "severity": "Medium"
+    }
+}

@@ -1,0 +1,161 @@
+{
+    "schema_version": "1.6.0",
+    "id": "OESA-2022-1482",
+    "modified": "2022-01-07T00:00:00Z",
+    "published": "2022-01-07T00:00:00Z",
+    "withdrawn": "",
+    "aliases": null,
+    "related": [
+        "CVE-2021-43818"
+    ],
+    "summary": "python-lxml security update",
+    "details": "XML processing library combining libxml2/libxslt with the ElementTree API.\r\n\r\nSecurity Fix(es):\r\n\r\nlxml is a library for processing XML and HTML in the Python language. Prior to version 4.6.5, the HTML Cleaner in lxml.html lets certain crafted script content pass through, as well as script content in SVG files embedded using data URIs. Users that employ the HTML cleaner in a security relevant context should upgrade to lxml 4.6.5 to receive a patch. There are no known workarounds available.(CVE-2021-43818)",
+    "severity": null,
+    "affected": [
+        {
+            "package": {
+                "ecosystem": "openEuler-20.03-LTS-SP1",
+                "name": "python-lxml",
+                "purl": "pkg:rpm/python-lxml@4.5.2-4.oe1"
+            },
+            "severity": null,
+            "ranges": [
+                {
+                    "type": "ECOSYSTEM",
+                    "repo": "",
+                    "events": [
+                        {
+                            "introduced": "0",
+                            "fixed": "4.5.2-4.oe1",
+                            "last_affected": "",
+                            "limit": ""
+                        }
+                    ],
+                    "database_specific": null
+                }
+            ],
+            "versions": null,
+            "ecosystem_specific": {
+                "aarch64": [
+                    "python-lxml-debuginfo-4.5.2-4.oe1.aarch64.rpm",
+                    "python3-lxml-4.5.2-4.oe1.aarch64.rpm",
+                    "python-lxml-debugsource-4.5.2-4.oe1.aarch64.rpm",
+                    "python2-lxml-4.5.2-4.oe1.aarch64.rpm"
+                ],
+                "noarch": [
+                    "python-lxml-help-4.5.2-4.oe1.noarch.rpm"
+                ],
+                "src": [
+                    "python-lxml-4.5.2-4.oe1.src.rpm"
+                ],
+                "x86_64": [
+                    "python-lxml-debuginfo-4.5.2-4.oe1.x86_64.rpm",
+                    "python2-lxml-4.5.2-4.oe1.x86_64.rpm",
+                    "python3-lxml-4.5.2-4.oe1.x86_64.rpm",
+                    "python-lxml-debugsource-4.5.2-4.oe1.x86_64.rpm"
+                ]
+            },
+            "database_specific": null
+        },
+        {
+            "package": {
+                "ecosystem": "openEuler-20.03-LTS-SP2",
+                "name": "python-lxml",
+                "purl": "pkg:rpm/python-lxml@4.5.2-4.oe1"
+            },
+            "severity": null,
+            "ranges": [
+                {
+                    "type": "ECOSYSTEM",
+                    "repo": "",
+                    "events": [
+                        {
+                            "introduced": "0",
+                            "fixed": "4.5.2-4.oe1",
+                            "last_affected": "",
+                            "limit": ""
+                        }
+                    ],
+                    "database_specific": null
+                }
+            ],
+            "versions": null,
+            "ecosystem_specific": {
+                "aarch64": [
+                    "python2-lxml-4.5.2-4.oe1.aarch64.rpm",
+                    "python-lxml-debugsource-4.5.2-4.oe1.aarch64.rpm",
+                    "python-lxml-debuginfo-4.5.2-4.oe1.aarch64.rpm",
+                    "python3-lxml-4.5.2-4.oe1.aarch64.rpm"
+                ],
+                "noarch": [
+                    "python-lxml-help-4.5.2-4.oe1.noarch.rpm"
+                ],
+                "src": [
+                    "python-lxml-4.5.2-4.oe1.src.rpm"
+                ],
+                "x86_64": [
+                    "python-lxml-debuginfo-4.5.2-4.oe1.x86_64.rpm",
+                    "python3-lxml-4.5.2-4.oe1.x86_64.rpm",
+                    "python-lxml-debugsource-4.5.2-4.oe1.x86_64.rpm",
+                    "python2-lxml-4.5.2-4.oe1.x86_64.rpm"
+                ]
+            },
+            "database_specific": null
+        },
+        {
+            "package": {
+                "ecosystem": "openEuler-20.03-LTS-SP3",
+                "name": "python-lxml",
+                "purl": "pkg:rpm/python-lxml@4.5.2-4.oe1"
+            },
+            "severity": null,
+            "ranges": [
+                {
+                    "type": "ECOSYSTEM",
+                    "repo": "",
+                    "events": [
+                        {
+                            "introduced": "0",
+                            "fixed": "4.5.2-4.oe1",
+                            "last_affected": "",
+                            "limit": ""
+                        }
+                    ],
+                    "database_specific": null
+                }
+            ],
+            "versions": null,
+            "ecosystem_specific": {
+                "aarch64": [
+                    "python2-lxml-4.5.2-4.oe1.aarch64.rpm",
+                    "python-lxml-debugsource-4.5.2-4.oe1.aarch64.rpm",
+                    "python-lxml-debuginfo-4.5.2-4.oe1.aarch64.rpm",
+                    "python3-lxml-4.5.2-4.oe1.aarch64.rpm"
+                ],
+                "noarch": [
+                    "python-lxml-help-4.5.2-4.oe1.noarch.rpm"
+                ],
+                "src": [
+                    "python-lxml-4.5.2-4.oe1.src.rpm"
+                ],
+                "x86_64": [
+                    "python-lxml-debuginfo-4.5.2-4.oe1.x86_64.rpm",
+                    "python3-lxml-4.5.2-4.oe1.x86_64.rpm",
+                    "python-lxml-debugsource-4.5.2-4.oe1.x86_64.rpm",
+                    "python2-lxml-4.5.2-4.oe1.x86_64.rpm"
+                ]
+            },
+            "database_specific": null
+        }
+    ],
+    "references": [
+        {
+            "type": "ADVISORY",
+            "url": "https://nvd.nist.gov/vuln/detail/CVE-2021-43818"
+        }
+    ],
+    "credits": null,
+    "database_specific": {
+        "severity": "High"
+    }
+}

@@ -1,0 +1,94 @@
+{
+    "schema_version": "1.6.0",
+    "id": "OESA-2022-1781",
+    "modified": "2022-07-26T00:00:00Z",
+    "published": "2022-07-26T00:00:00Z",
+    "withdrawn": "",
+    "aliases": null,
+    "related": [
+        "CVE-2022-23305"
+    ],
+    "summary": "log4j12 security update",
+    "details": "With log4j it is possible to enable logging at runtime without modifying the application binary.\r\n\r\nSecurity Fix(es):\r\n\r\nBy design, the JDBCAppender in Log4j 1.2.x accepts an SQL statement as a configuration parameter where the values to be inserted are converters from PatternLayout. The message converter, %m, is likely to always be included. This allows attackers to manipulate the SQL by entering crafted strings into input fields or headers of an application that are logged allowing unintended SQL queries to be executed. Note this issue only affects Log4j 1.x when specifically configured to use the JDBCAppender, which is not the default. Beginning in version 2.0-beta8, the JDBCAppender was re-introduced with proper support for parameterized SQL queries and further customization over the columns written to in logs. Apache Log4j 1.2 reached end of life in August 2015. Users should upgrade to Log4j 2 as it addresses numerous other issues from the previous versions.(CVE-2022-23305)",
+    "severity": null,
+    "affected": [
+        {
+            "package": {
+                "ecosystem": "openEuler-20.03-LTS-SP1",
+                "name": "log4j12",
+                "purl": "pkg:rpm/log4j12@1.2.17-25.oe1"
+            },
+            "severity": null,
+            "ranges": [
+                {
+                    "type": "ECOSYSTEM",
+                    "repo": "",
+                    "events": [
+                        {
+                            "introduced": "0",
+                            "fixed": "1.2.17-25.oe1",
+                            "last_affected": "",
+                            "limit": ""
+                        }
+                    ],
+                    "database_specific": null
+                }
+            ],
+            "versions": null,
+            "ecosystem_specific": {
+                "noarch": [
+                    "log4j12-1.2.17-25.oe1.noarch.rpm",
+                    "log4j12-help-1.2.17-25.oe1.noarch.rpm"
+                ],
+                "src": [
+                    "log4j12-1.2.17-25.oe1.src.rpm"
+                ]
+            },
+            "database_specific": null
+        },
+        {
+            "package": {
+                "ecosystem": "openEuler-20.03-LTS-SP3",
+                "name": "log4j12",
+                "purl": "pkg:rpm/log4j12@1.2.17-25.oe1"
+            },
+            "severity": null,
+            "ranges": [
+                {
+                    "type": "ECOSYSTEM",
+                    "repo": "",
+                    "events": [
+                        {
+                            "introduced": "0",
+                            "fixed": "1.2.17-25.oe1",
+                            "last_affected": "",
+                            "limit": ""
+                        }
+                    ],
+                    "database_specific": null
+                }
+            ],
+            "versions": null,
+            "ecosystem_specific": {
+                "noarch": [
+                    "log4j12-help-1.2.17-25.oe1.noarch.rpm",
+                    "log4j12-1.2.17-25.oe1.noarch.rpm"
+                ],
+                "src": [
+                    "log4j12-1.2.17-25.oe1.src.rpm"
+                ]
+            },
+            "database_specific": null
+        }
+    ],
+    "references": [
+        {
+            "type": "ADVISORY",
+            "url": "https://nvd.nist.gov/vuln/detail/CVE-2022-23305"
+        }
+    ],
+    "credits": null,
+    "database_specific": {
+        "severity": "Critical"
+    }
+}

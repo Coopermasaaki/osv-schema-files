@@ -1,0 +1,116 @@
+{
+    "schema_version": "1.6.0",
+    "id": "OESA-2021-1346",
+    "modified": "2021-09-18T00:00:00Z",
+    "published": "2021-09-18T00:00:00Z",
+    "withdrawn": "",
+    "aliases": null,
+    "related": [
+        "CVE-2021-39365"
+    ],
+    "summary": "grilo security update",
+    "details": "Grilo is a framework focused on making media discovery and browsing easy for application developers.\r\n\r\nSecurity Fix(es):\r\n\r\nIn GNOME grilo though 0.3.13, grl-net-wc.c does not enable TLS certificate verification on the SoupSessionAsync objects it creates, leaving users vulnerable to network MITM attacks. NOTE: this is similar to CVE-2016-20011.(CVE-2021-39365)",
+    "severity": null,
+    "affected": [
+        {
+            "package": {
+                "ecosystem": "openEuler-20.03-LTS-SP1",
+                "name": "grilo",
+                "purl": "pkg:rpm/grilo@0.3.9-4.oe1"
+            },
+            "severity": null,
+            "ranges": [
+                {
+                    "type": "ECOSYSTEM",
+                    "repo": "",
+                    "events": [
+                        {
+                            "introduced": "0",
+                            "fixed": "0.3.9-4.oe1",
+                            "last_affected": "",
+                            "limit": ""
+                        }
+                    ],
+                    "database_specific": null
+                }
+            ],
+            "versions": null,
+            "ecosystem_specific": {
+                "aarch64": [
+                    "grilo-devel-0.3.9-4.oe1.aarch64.rpm",
+                    "grilo-debugsource-0.3.9-4.oe1.aarch64.rpm",
+                    "grilo-0.3.9-4.oe1.aarch64.rpm",
+                    "grilo-debuginfo-0.3.9-4.oe1.aarch64.rpm"
+                ],
+                "noarch": [
+                    "grilo-help-0.3.9-4.oe1.noarch.rpm"
+                ],
+                "src": [
+                    "grilo-0.3.9-4.oe1.src.rpm"
+                ],
+                "x86_64": [
+                    "grilo-debugsource-0.3.9-4.oe1.x86_64.rpm",
+                    "grilo-devel-0.3.9-4.oe1.x86_64.rpm",
+                    "grilo-0.3.9-4.oe1.x86_64.rpm",
+                    "grilo-debuginfo-0.3.9-4.oe1.x86_64.rpm"
+                ]
+            },
+            "database_specific": null
+        },
+        {
+            "package": {
+                "ecosystem": "openEuler-20.03-LTS-SP2",
+                "name": "grilo",
+                "purl": "pkg:rpm/grilo@0.3.9-4.oe1"
+            },
+            "severity": null,
+            "ranges": [
+                {
+                    "type": "ECOSYSTEM",
+                    "repo": "",
+                    "events": [
+                        {
+                            "introduced": "0",
+                            "fixed": "0.3.9-4.oe1",
+                            "last_affected": "",
+                            "limit": ""
+                        }
+                    ],
+                    "database_specific": null
+                }
+            ],
+            "versions": null,
+            "ecosystem_specific": {
+                "aarch64": [
+                    "grilo-debuginfo-0.3.9-4.oe1.aarch64.rpm",
+                    "grilo-devel-0.3.9-4.oe1.aarch64.rpm",
+                    "grilo-0.3.9-4.oe1.aarch64.rpm",
+                    "grilo-debugsource-0.3.9-4.oe1.aarch64.rpm"
+                ],
+                "noarch": [
+                    "grilo-help-0.3.9-4.oe1.noarch.rpm"
+                ],
+                "src": [
+                    "grilo-0.3.9-4.oe1.src.rpm"
+                ],
+                "x86_64": [
+                    "grilo-devel-0.3.9-4.oe1.x86_64.rpm",
+                    "grilo-debugsource-0.3.9-4.oe1.x86_64.rpm",
+                    "grilo-0.3.9-4.oe1.x86_64.rpm",
+                    "grilo-debuginfo-0.3.9-4.oe1.x86_64.rpm"
+                ]
+            },
+            "database_specific": null
+        }
+    ],
+    "references": [
+        {
+            "type": "ADVISORY",
+            "url": "https://nvd.nist.gov/vuln/detail/CVE-2021-39365"
+        }
+    ],
+    "credits": null,
+    "database_specific": {
+        "severity": "Medium"
+    }
+}

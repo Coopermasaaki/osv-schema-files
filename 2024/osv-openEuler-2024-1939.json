@@ -1,0 +1,71 @@
+{
+    "schema_version": "1.6.0",
+    "id": "OESA-2024-1939",
+    "modified": "2024-08-02T00:00:00Z",
+    "published": "2024-08-02T00:00:00Z",
+    "withdrawn": "",
+    "aliases": null,
+    "related": [
+        "CVE-2024-5688",
+        "CVE-2024-6602"
+    ],
+    "summary": "firefox security update",
+    "details": "Mozilla Firefox is a standalone web browser, designed for standards compliance and performance.  Its functionality can be enhanced via a plethora of extensions.\r\n\r\nSecurity Fix(es):\r\n\r\nIf a garbage collection was triggered at the right time, a use-after-free could have occurred during object transplant. This vulnerability affects Firefox \u0026lt; 127, Firefox ESR \u0026lt; 115.12, and Thunderbird \u0026lt; 115.12.(CVE-2024-5688)\r\n\r\nA mismatch between allocator and deallocator could have lead to memory corruption. This vulnerability affects Firefox \u0026lt; 128, Firefox ESR \u0026lt; 115.13, Thunderbird \u0026lt; 115.13, and Thunderbird \u0026lt; 128.(CVE-2024-6602)",
+    "severity": null,
+    "affected": [
+        {
+            "package": {
+                "ecosystem": "openEuler-24.03-LTS",
+                "name": "firefox",
+                "purl": "pkg:rpm/firefox@115.13.0-1.oe2403"
+            },
+            "severity": null,
+            "ranges": [
+                {
+                    "type": "ECOSYSTEM",
+                    "repo": "",
+                    "events": [
+                        {
+                            "introduced": "0",
+                            "fixed": "115.13.0-1.oe2403",
+                            "last_affected": "",
+                            "limit": ""
+                        }
+                    ],
+                    "database_specific": null
+                }
+            ],
+            "versions": null,
+            "ecosystem_specific": {
+                "aarch64": [
+                    "firefox-debugsource-115.13.0-1.oe2403.aarch64.rpm",
+                    "firefox-debuginfo-115.13.0-1.oe2403.aarch64.rpm",
+                    "firefox-115.13.0-1.oe2403.aarch64.rpm"
+                ],
+                "src": [
+                    "firefox-115.13.0-1.oe2403.src.rpm"
+                ],
+                "x86_64": [
+                    "firefox-debugsource-115.13.0-1.oe2403.x86_64.rpm",
+                    "firefox-debuginfo-115.13.0-1.oe2403.x86_64.rpm",
+                    "firefox-115.13.0-1.oe2403.x86_64.rpm"
+                ]
+            },
+            "database_specific": null
+        }
+    ],
+    "references": [
+        {
+            "type": "ADVISORY",
+            "url": "https://nvd.nist.gov/vuln/detail/CVE-2024-5688"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://nvd.nist.gov/vuln/detail/CVE-2024-6602"
+        }
+    ],
+    "credits": null,
+    "database_specific": {
+        "severity": "High"
+    }
+}

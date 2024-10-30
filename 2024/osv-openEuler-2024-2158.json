@@ -1,0 +1,196 @@
+{
+    "schema_version": "1.6.0",
+    "id": "OESA-2024-2158",
+    "modified": "2024-09-20T00:00:00Z",
+    "published": "2024-09-20T00:00:00Z",
+    "withdrawn": "",
+    "aliases": null,
+    "related": [
+        "CVE-2024-23984",
+        "CVE-2024-24968"
+    ],
+    "summary": "microcode_ctl security update",
+    "details": "This is a tool to transform and deploy microcode update for x86 CPUs.\n\nSecurity Fix(es):\n\nObservable discrepancy in RAPL interface for some Intel(R) Processors may allow a privileged user to potentially enable information disclosure via local access.(CVE-2024-23984)\n\nImproper finite state machines (FSMs) in hardware logic in some Intel(R) Processors may allow an privileged user to potentially enable a denial of service via local access.(CVE-2024-24968)",
+    "severity": null,
+    "affected": [
+        {
+            "package": {
+                "ecosystem": "openEuler-20.03-LTS-SP4",
+                "name": "microcode_ctl",
+                "purl": "pkg:rpm/microcode_ctl@20240910-1.oe2003sp4"
+            },
+            "severity": null,
+            "ranges": [
+                {
+                    "type": "ECOSYSTEM",
+                    "repo": "",
+                    "events": [
+                        {
+                            "introduced": "0",
+                            "fixed": "20240910-1.oe2003sp4",
+                            "last_affected": "",
+                            "limit": ""
+                        }
+                    ],
+                    "database_specific": null
+                }
+            ],
+            "versions": null,
+            "ecosystem_specific": {
+                "src": [
+                    "microcode_ctl-20240910-1.oe2003sp4.src.rpm"
+                ],
+                "x86_64": [
+                    "microcode_ctl-20240910-1.oe2003sp4.x86_64.rpm"
+                ]
+            },
+            "database_specific": null
+        },
+        {
+            "package": {
+                "ecosystem": "openEuler-22.03-LTS-SP1",
+                "name": "microcode_ctl",
+                "purl": "pkg:rpm/microcode_ctl@20240910-1.oe2203sp1"
+            },
+            "severity": null,
+            "ranges": [
+                {
+                    "type": "ECOSYSTEM",
+                    "repo": "",
+                    "events": [
+                        {
+                            "introduced": "0",
+                            "fixed": "20240910-1.oe2203sp1",
+                            "last_affected": "",
+                            "limit": ""
+                        }
+                    ],
+                    "database_specific": null
+                }
+            ],
+            "versions": null,
+            "ecosystem_specific": {
+                "src": [
+                    "microcode_ctl-20240910-1.oe2203sp1.src.rpm"
+                ],
+                "x86_64": [
+                    "microcode_ctl-20240910-1.oe2203sp1.x86_64.rpm"
+                ]
+            },
+            "database_specific": null
+        },
+        {
+            "package": {
+                "ecosystem": "openEuler-24.03-LTS",
+                "name": "microcode_ctl",
+                "purl": "pkg:rpm/microcode_ctl@20240910-1.oe2403"
+            },
+            "severity": null,
+            "ranges": [
+                {
+                    "type": "ECOSYSTEM",
+                    "repo": "",
+                    "events": [
+                        {
+                            "introduced": "0",
+                            "fixed": "20240910-1.oe2403",
+                            "last_affected": "",
+                            "limit": ""
+                        }
+                    ],
+                    "database_specific": null
+                }
+            ],
+            "versions": null,
+            "ecosystem_specific": {
+                "src": [
+                    "microcode_ctl-20240910-1.oe2403.src.rpm"
+                ],
+                "x86_64": [
+                    "microcode_ctl-20240910-1.oe2403.x86_64.rpm"
+                ]
+            },
+            "database_specific": null
+        },
+        {
+            "package": {
+                "ecosystem": "openEuler-22.03-LTS-SP4",
+                "name": "microcode_ctl",
+                "purl": "pkg:rpm/microcode_ctl@20240910-1.oe2203sp4"
+            },
+            "severity": null,
+            "ranges": [
+                {
+                    "type": "ECOSYSTEM",
+                    "repo": "",
+                    "events": [
+                        {
+                            "introduced": "0",
+                            "fixed": "20240910-1.oe2203sp4",
+                            "last_affected": "",
+                            "limit": ""
+                        }
+                    ],
+                    "database_specific": null
+                }
+            ],
+            "versions": null,
+            "ecosystem_specific": {
+                "src": [
+                    "microcode_ctl-20240910-1.oe2203sp4.src.rpm"
+                ],
+                "x86_64": [
+                    "microcode_ctl-20240910-1.oe2203sp4.x86_64.rpm"
+                ]
+            },
+            "database_specific": null
+        },
+        {
+            "package": {
+                "ecosystem": "openEuler-22.03-LTS-SP3",
+                "name": "microcode_ctl",
+                "purl": "pkg:rpm/microcode_ctl@20240910-1.oe2203sp3"
+            },
+            "severity": null,
+            "ranges": [
+                {
+                    "type": "ECOSYSTEM",
+                    "repo": "",
+                    "events": [
+                        {
+                            "introduced": "0",
+                            "fixed": "20240910-1.oe2203sp3",
+                            "last_affected": "",
+                            "limit": ""
+                        }
+                    ],
+                    "database_specific": null
+                }
+            ],
+            "versions": null,
+            "ecosystem_specific": {
+                "src": [
+                    "microcode_ctl-20240910-1.oe2203sp3.src.rpm"
+                ],
+                "x86_64": [
+                    "microcode_ctl-20240910-1.oe2203sp3.x86_64.rpm"
+                ]
+            },
+            "database_specific": null
+        }
+    ],
+    "references": [
+        {
+            "type": "ADVISORY",
+            "url": "https://nvd.nist.gov/vuln/detail/CVE-2024-23984"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://nvd.nist.gov/vuln/detail/CVE-2024-24968"
+        }
+    ],
+    "credits": null,
+    "database_specific": {
+        "severity": "Medium"
+    }
+}

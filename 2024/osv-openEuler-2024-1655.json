@@ -1,0 +1,59 @@
+{
+    "schema_version": "1.6.0",
+    "id": "OESA-2024-1655",
+    "modified": "2024-05-24T00:00:00Z",
+    "published": "2024-05-24T00:00:00Z",
+    "withdrawn": "",
+    "aliases": null,
+    "related": [
+        "CVE-2024-3651"
+    ],
+    "summary": "python-idna security update",
+    "details": "A library to support the Internationalised Domain Names in Applications (IDNA) protocol as specified in RFC 5891 http://tools.ietf.org/html/rfc5891. This version of the protocol is often referred to as “IDNA2008” and can produce different results from the earlier standard from 2003.\r\n\r\nSecurity Fix(es):\r\n\r\nA flaw was found in the python-idna library. A malicious argument was sent to the idna.encode() function can trigger an uncontrolled resource consumption, resulting in a denial of service.(CVE-2024-3651)",
+    "severity": null,
+    "affected": [
+        {
+            "package": {
+                "ecosystem": "openEuler-22.03-LTS-SP3",
+                "name": "python-idna",
+                "purl": "pkg:rpm/python-idna@3.2-3.oe2203sp3"
+            },
+            "severity": null,
+            "ranges": [
+                {
+                    "type": "ECOSYSTEM",
+                    "repo": "",
+                    "events": [
+                        {
+                            "introduced": "0",
+                            "fixed": "3.2-3.oe2203sp3",
+                            "last_affected": "",
+                            "limit": ""
+                        }
+                    ],
+                    "database_specific": null
+                }
+            ],
+            "versions": null,
+            "ecosystem_specific": {
+                "noarch": [
+                    "python3-idna-3.2-3.oe2203sp3.noarch.rpm"
+                ],
+                "src": [
+                    "python-idna-3.2-3.oe2203sp3.src.rpm"
+                ]
+            },
+            "database_specific": null
+        }
+    ],
+    "references": [
+        {
+            "type": "ADVISORY",
+            "url": "https://nvd.nist.gov/vuln/detail/CVE-2024-3651"
+        }
+    ],
+    "credits": null,
+    "database_specific": {
+        "severity": "Medium"
+    }
+}

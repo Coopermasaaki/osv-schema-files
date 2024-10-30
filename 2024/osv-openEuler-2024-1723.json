@@ -1,0 +1,202 @@
+{
+    "schema_version": "1.6.0",
+    "id": "OESA-2024-1723",
+    "modified": "2024-06-14T00:00:00Z",
+    "published": "2024-06-14T00:00:00Z",
+    "withdrawn": "",
+    "aliases": null,
+    "related": [
+        "CVE-2024-5564"
+    ],
+    "summary": "libndp security update",
+    "details": "This package contains a library which provides a wrapper for IPv6 Neighbor Discovery Protocol. It also provides a tool named ndptool for sending and receiving NDP messages.\r\n\r\nSecurity Fix(es):\r\n\r\nA vulnerability was found in libndp. This flaw allows a local malicious user to cause a buffer overflow in NetworkManager, triggered by sending a malformed IPv6 router advertisement packet. This issue occurred as libndp was not correctly validating the route length information.(CVE-2024-5564)",
+    "severity": null,
+    "affected": [
+        {
+            "package": {
+                "ecosystem": "openEuler-20.03-LTS-SP4",
+                "name": "libndp",
+                "purl": "pkg:rpm/libndp@1.7-4.oe2003sp4"
+            },
+            "severity": null,
+            "ranges": [
+                {
+                    "type": "ECOSYSTEM",
+                    "repo": "",
+                    "events": [
+                        {
+                            "introduced": "0",
+                            "fixed": "1.7-4.oe2003sp4",
+                            "last_affected": "",
+                            "limit": ""
+                        }
+                    ],
+                    "database_specific": null
+                }
+            ],
+            "versions": null,
+            "ecosystem_specific": {
+                "aarch64": [
+                    "libndp-1.7-4.oe2003sp4.aarch64.rpm",
+                    "libndp-debugsource-1.7-4.oe2003sp4.aarch64.rpm",
+                    "libndp-debuginfo-1.7-4.oe2003sp4.aarch64.rpm",
+                    "libndp-help-1.7-4.oe2003sp4.aarch64.rpm",
+                    "libndp-devel-1.7-4.oe2003sp4.aarch64.rpm"
+                ],
+                "src": [
+                    "libndp-1.7-4.oe2003sp4.src.rpm"
+                ],
+                "x86_64": [
+                    "libndp-1.7-4.oe2003sp4.x86_64.rpm",
+                    "libndp-debuginfo-1.7-4.oe2003sp4.x86_64.rpm",
+                    "libndp-help-1.7-4.oe2003sp4.x86_64.rpm",
+                    "libndp-debugsource-1.7-4.oe2003sp4.x86_64.rpm",
+                    "libndp-devel-1.7-4.oe2003sp4.x86_64.rpm"
+                ]
+            },
+            "database_specific": null
+        },
+        {
+            "package": {
+                "ecosystem": "openEuler-22.03-LTS-SP1",
+                "name": "libndp",
+                "purl": "pkg:rpm/libndp@1.8-3.oe2203sp1"
+            },
+            "severity": null,
+            "ranges": [
+                {
+                    "type": "ECOSYSTEM",
+                    "repo": "",
+                    "events": [
+                        {
+                            "introduced": "0",
+                            "fixed": "1.8-3.oe2203sp1",
+                            "last_affected": "",
+                            "limit": ""
+                        }
+                    ],
+                    "database_specific": null
+                }
+            ],
+            "versions": null,
+            "ecosystem_specific": {
+                "aarch64": [
+                    "libndp-help-1.8-3.oe2203sp1.aarch64.rpm",
+                    "libndp-devel-1.8-3.oe2203sp1.aarch64.rpm",
+                    "libndp-debugsource-1.8-3.oe2203sp1.aarch64.rpm",
+                    "libndp-1.8-3.oe2203sp1.aarch64.rpm",
+                    "libndp-debuginfo-1.8-3.oe2203sp1.aarch64.rpm"
+                ],
+                "src": [
+                    "libndp-1.8-3.oe2203sp1.src.rpm"
+                ],
+                "x86_64": [
+                    "libndp-devel-1.8-3.oe2203sp1.x86_64.rpm",
+                    "libndp-1.8-3.oe2203sp1.x86_64.rpm",
+                    "libndp-debugsource-1.8-3.oe2203sp1.x86_64.rpm",
+                    "libndp-help-1.8-3.oe2203sp1.x86_64.rpm",
+                    "libndp-debuginfo-1.8-3.oe2203sp1.x86_64.rpm"
+                ]
+            },
+            "database_specific": null
+        },
+        {
+            "package": {
+                "ecosystem": "openEuler-22.03-LTS-SP3",
+                "name": "libndp",
+                "purl": "pkg:rpm/libndp@1.8-3.oe2203sp3"
+            },
+            "severity": null,
+            "ranges": [
+                {
+                    "type": "ECOSYSTEM",
+                    "repo": "",
+                    "events": [
+                        {
+                            "introduced": "0",
+                            "fixed": "1.8-3.oe2203sp3",
+                            "last_affected": "",
+                            "limit": ""
+                        }
+                    ],
+                    "database_specific": null
+                }
+            ],
+            "versions": null,
+            "ecosystem_specific": {
+                "aarch64": [
+                    "libndp-help-1.8-3.oe2203sp3.aarch64.rpm",
+                    "libndp-debugsource-1.8-3.oe2203sp3.aarch64.rpm",
+                    "libndp-debuginfo-1.8-3.oe2203sp3.aarch64.rpm",
+                    "libndp-devel-1.8-3.oe2203sp3.aarch64.rpm",
+                    "libndp-1.8-3.oe2203sp3.aarch64.rpm"
+                ],
+                "src": [
+                    "libndp-1.8-3.oe2203sp3.src.rpm"
+                ],
+                "x86_64": [
+                    "libndp-1.8-3.oe2203sp3.x86_64.rpm",
+                    "libndp-help-1.8-3.oe2203sp3.x86_64.rpm",
+                    "libndp-devel-1.8-3.oe2203sp3.x86_64.rpm",
+                    "libndp-debugsource-1.8-3.oe2203sp3.x86_64.rpm",
+                    "libndp-debuginfo-1.8-3.oe2203sp3.x86_64.rpm"
+                ]
+            },
+            "database_specific": null
+        },
+        {
+            "package": {
+                "ecosystem": "openEuler-24.03-LTS",
+                "name": "libndp",
+                "purl": "pkg:rpm/libndp@1.8-3.oe2403"
+            },
+            "severity": null,
+            "ranges": [
+                {
+                    "type": "ECOSYSTEM",
+                    "repo": "",
+                    "events": [
+                        {
+                            "introduced": "0",
+                            "fixed": "1.8-3.oe2403",
+                            "last_affected": "",
+                            "limit": ""
+                        }
+                    ],
+                    "database_specific": null
+                }
+            ],
+            "versions": null,
+            "ecosystem_specific": {
+                "aarch64": [
+                    "libndp-1.8-3.oe2403.aarch64.rpm",
+                    "libndp-debuginfo-1.8-3.oe2403.aarch64.rpm",
+                    "libndp-devel-1.8-3.oe2403.aarch64.rpm",
+                    "libndp-help-1.8-3.oe2403.aarch64.rpm",
+                    "libndp-debugsource-1.8-3.oe2403.aarch64.rpm"
+                ],
+                "src": [
+                    "libndp-1.8-3.oe2403.src.rpm"
+                ],
+                "x86_64": [
+                    "libndp-devel-1.8-3.oe2403.x86_64.rpm",
+                    "libndp-1.8-3.oe2403.x86_64.rpm",
+                    "libndp-debuginfo-1.8-3.oe2403.x86_64.rpm",
+                    "libndp-debugsource-1.8-3.oe2403.x86_64.rpm",
+                    "libndp-help-1.8-3.oe2403.x86_64.rpm"
+                ]
+            },
+            "database_specific": null
+        }
+    ],
+    "references": [
+        {
+            "type": "ADVISORY",
+            "url": "https://nvd.nist.gov/vuln/detail/CVE-2024-5564"
+        }
+    ],
+    "credits": null,
+    "database_specific": {
+        "severity": "High"
+    }
+}

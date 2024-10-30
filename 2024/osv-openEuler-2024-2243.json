@@ -1,0 +1,191 @@
+{
+    "schema_version": "1.6.0",
+    "id": "OESA-2024-2243",
+    "modified": "2024-10-12T00:00:00Z",
+    "published": "2024-10-12T00:00:00Z",
+    "withdrawn": "",
+    "aliases": null,
+    "related": [
+        "CVE-2024-28168"
+    ],
+    "summary": "fop security update",
+    "details": "FOP (Formatting Objects Processor) is a print formatter driven by XSL formatting objects (XSL-FO) and an output independent formatter. It is a Java application that reads a formatting object (FO) tree and renders the resulting pages to a specified output. Output formats currently supported include PDF, PS, PCL, AFP, XML (area tree representation), Print, AWT and PNG, and to a lesser extent, RTF and TXT. The primary output target is PDF.\r\n\r\nSecurity Fix(es):\r\n\r\nImproper Restriction of XML External Entity Reference (\u0026apos;XXE\u0026apos;) vulnerability in Apache XML Graphics FOP.\r\n\r\nThis issue affects Apache XML Graphics FOP: 2.9.\r\n\r\nUsers are recommended to upgrade to version 2.10, which fixes the issue.(CVE-2024-28168)",
+    "severity": null,
+    "affected": [
+        {
+            "package": {
+                "ecosystem": "openEuler-20.03-LTS-SP4",
+                "name": "fop",
+                "purl": "pkg:rpm/fop@2.2-7.oe2003sp4"
+            },
+            "severity": null,
+            "ranges": [
+                {
+                    "type": "ECOSYSTEM",
+                    "repo": "",
+                    "events": [
+                        {
+                            "introduced": "0",
+                            "fixed": "2.2-7.oe2003sp4",
+                            "last_affected": "",
+                            "limit": ""
+                        }
+                    ],
+                    "database_specific": null
+                }
+            ],
+            "versions": null,
+            "ecosystem_specific": {
+                "noarch": [
+                    "fop-2.2-7.oe2003sp4.noarch.rpm"
+                ],
+                "src": [
+                    "fop-2.2-7.oe2003sp4.src.rpm"
+                ]
+            },
+            "database_specific": null
+        },
+        {
+            "package": {
+                "ecosystem": "openEuler-22.03-LTS-SP1",
+                "name": "fop",
+                "purl": "pkg:rpm/fop@2.2-9.oe2203sp1"
+            },
+            "severity": null,
+            "ranges": [
+                {
+                    "type": "ECOSYSTEM",
+                    "repo": "",
+                    "events": [
+                        {
+                            "introduced": "0",
+                            "fixed": "2.2-9.oe2203sp1",
+                            "last_affected": "",
+                            "limit": ""
+                        }
+                    ],
+                    "database_specific": null
+                }
+            ],
+            "versions": null,
+            "ecosystem_specific": {
+                "noarch": [
+                    "fop-2.2-9.oe2203sp1.noarch.rpm"
+                ],
+                "src": [
+                    "fop-2.2-9.oe2203sp1.src.rpm"
+                ]
+            },
+            "database_specific": null
+        },
+        {
+            "package": {
+                "ecosystem": "openEuler-24.03-LTS",
+                "name": "fop",
+                "purl": "pkg:rpm/fop@2.2-9.oe2403"
+            },
+            "severity": null,
+            "ranges": [
+                {
+                    "type": "ECOSYSTEM",
+                    "repo": "",
+                    "events": [
+                        {
+                            "introduced": "0",
+                            "fixed": "2.2-9.oe2403",
+                            "last_affected": "",
+                            "limit": ""
+                        }
+                    ],
+                    "database_specific": null
+                }
+            ],
+            "versions": null,
+            "ecosystem_specific": {
+                "noarch": [
+                    "fop-2.2-9.oe2403.noarch.rpm"
+                ],
+                "src": [
+                    "fop-2.2-9.oe2403.src.rpm"
+                ]
+            },
+            "database_specific": null
+        },
+        {
+            "package": {
+                "ecosystem": "openEuler-22.03-LTS-SP4",
+                "name": "fop",
+                "purl": "pkg:rpm/fop@2.2-9.oe2203sp4"
+            },
+            "severity": null,
+            "ranges": [
+                {
+                    "type": "ECOSYSTEM",
+                    "repo": "",
+                    "events": [
+                        {
+                            "introduced": "0",
+                            "fixed": "2.2-9.oe2203sp4",
+                            "last_affected": "",
+                            "limit": ""
+                        }
+                    ],
+                    "database_specific": null
+                }
+            ],
+            "versions": null,
+            "ecosystem_specific": {
+                "noarch": [
+                    "fop-2.2-9.oe2203sp4.noarch.rpm"
+                ],
+                "src": [
+                    "fop-2.2-9.oe2203sp4.src.rpm"
+                ]
+            },
+            "database_specific": null
+        },
+        {
+            "package": {
+                "ecosystem": "openEuler-22.03-LTS-SP3",
+                "name": "fop",
+                "purl": "pkg:rpm/fop@2.2-9.oe2203sp3"
+            },
+            "severity": null,
+            "ranges": [
+                {
+                    "type": "ECOSYSTEM",
+                    "repo": "",
+                    "events": [
+                        {
+                            "introduced": "0",
+                            "fixed": "2.2-9.oe2203sp3",
+                            "last_affected": "",
+                            "limit": ""
+                        }
+                    ],
+                    "database_specific": null
+                }
+            ],
+            "versions": null,
+            "ecosystem_specific": {
+                "noarch": [
+                    "fop-2.2-9.oe2203sp3.noarch.rpm"
+                ],
+                "src": [
+                    "fop-2.2-9.oe2203sp3.src.rpm"
+                ]
+            },
+            "database_specific": null
+        }
+    ],
+    "references": [
+        {
+            "type": "ADVISORY",
+            "url": "https://nvd.nist.gov/vuln/detail/CVE-2024-28168"
+        }
+    ],
+    "credits": null,
+    "database_specific": {
+        "severity": "High"
+    }
+}

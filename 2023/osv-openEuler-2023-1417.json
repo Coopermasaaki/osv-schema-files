@@ -1,0 +1,77 @@
+{
+    "schema_version": "1.6.0",
+    "id": "OESA-2023-1417",
+    "modified": "2023-07-08T00:00:00Z",
+    "published": "2023-07-08T00:00:00Z",
+    "withdrawn": "",
+    "aliases": null,
+    "related": [
+        "CVE-2022-2414"
+    ],
+    "summary": "pki-core security update",
+    "details": "Dogtag PKI is a designed  enterprise software system manage enterprise Public Key Infrastructure deployments.\n\nSecurity Fix(es):\n\nAccess to external entities when parsing XML documents can lead to XML external entity (XXE) attacks. This flaw allows a remote attacker to potentially retrieve the content of arbitrary files by sending specially crafted HTTP requests.(CVE-2022-2414)",
+    "severity": null,
+    "affected": [
+        {
+            "package": {
+                "ecosystem": "openEuler-20.03-LTS-SP1",
+                "name": "pki-core",
+                "purl": "pkg:rpm/pki-core@10.7.3-4.oe1"
+            },
+            "severity": null,
+            "ranges": [
+                {
+                    "type": "ECOSYSTEM",
+                    "repo": "",
+                    "events": [
+                        {
+                            "introduced": "0",
+                            "fixed": "10.7.3-4.oe1",
+                            "last_affected": "",
+                            "limit": ""
+                        }
+                    ],
+                    "database_specific": null
+                }
+            ],
+            "versions": null,
+            "ecosystem_specific": {
+                "aarch64": [
+                    "pki-tools-10.7.3-4.oe1.aarch64.rpm",
+                    "pki-symkey-10.7.3-4.oe1.aarch64.rpm",
+                    "pki-tps-10.7.3-4.oe1.aarch64.rpm"
+                ],
+                "noarch": [
+                    "pki-help-10.7.3-4.oe1.noarch.rpm",
+                    "pki-ocsp-10.7.3-4.oe1.noarch.rpm",
+                    "pki-kra-10.7.3-4.oe1.noarch.rpm",
+                    "pki-server-10.7.3-4.oe1.noarch.rpm",
+                    "pki-base-java-10.7.3-4.oe1.noarch.rpm",
+                    "pki-base-10.7.3-4.oe1.noarch.rpm",
+                    "pki-tks-10.7.3-4.oe1.noarch.rpm",
+                    "python3-pki-10.7.3-4.oe1.noarch.rpm",
+                    "pki-ca-10.7.3-4.oe1.noarch.rpm"
+                ],
+                "src": [
+                    "pki-core-10.7.3-4.oe1.src.rpm"
+                ],
+                "x86_64": [
+                    "pki-tools-10.7.3-4.oe1.x86_64.rpm",
+                    "pki-symkey-10.7.3-4.oe1.x86_64.rpm",
+                    "pki-tps-10.7.3-4.oe1.x86_64.rpm"
+                ]
+            },
+            "database_specific": null
+        }
+    ],
+    "references": [
+        {
+            "type": "ADVISORY",
+            "url": "https://nvd.nist.gov/vuln/detail/CVE-2022-2414"
+        }
+    ],
+    "credits": null,
+    "database_specific": {
+        "severity": "High"
+    }
+}

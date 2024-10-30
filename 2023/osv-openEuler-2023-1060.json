@@ -1,0 +1,65 @@
+{
+    "schema_version": "1.6.0",
+    "id": "OESA-2023-1060",
+    "modified": "2023-02-03T00:00:00Z",
+    "published": "2023-02-03T00:00:00Z",
+    "withdrawn": "",
+    "aliases": null,
+    "related": [
+        "CVE-2022-41704",
+        "CVE-2022-42890"
+    ],
+    "summary": "batik security update",
+    "details": "Batik is an inline templating engine for CoffeeScript, inspired by CoffeeKup,  that lets you write your template directly as a CoffeeScript function.\r\n\r\nSecurity Fix(es):\r\n\r\nA vulnerability in Batik of Apache XML Graphics allows an attacker to run untrusted Java code from an SVG. This issue affects Apache XML Graphics prior to 1.16. It is recommended to update to version 1.16.(CVE-2022-41704)\r\n\r\nA vulnerability in Batik of Apache XML Graphics allows an attacker to run Java code from untrusted SVG via JavaScript. This issue affects Apache XML Graphics prior to 1.16. Users are recommended to upgrade to version 1.16.(CVE-2022-42890)",
+    "severity": null,
+    "affected": [
+        {
+            "package": {
+                "ecosystem": "openEuler-20.03-LTS-SP1",
+                "name": "batik",
+                "purl": "pkg:rpm/batik@1.10-7.oe1"
+            },
+            "severity": null,
+            "ranges": [
+                {
+                    "type": "ECOSYSTEM",
+                    "repo": "",
+                    "events": [
+                        {
+                            "introduced": "0",
+                            "fixed": "1.10-7.oe1",
+                            "last_affected": "",
+                            "limit": ""
+                        }
+                    ],
+                    "database_specific": null
+                }
+            ],
+            "versions": null,
+            "ecosystem_specific": {
+                "noarch": [
+                    "batik-help-1.10-7.oe1.noarch.rpm",
+                    "batik-1.10-7.oe1.noarch.rpm"
+                ],
+                "src": [
+                    "batik-1.10-7.oe1.src.rpm"
+                ]
+            },
+            "database_specific": null
+        }
+    ],
+    "references": [
+        {
+            "type": "ADVISORY",
+            "url": "https://nvd.nist.gov/vuln/detail/CVE-2022-41704"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://nvd.nist.gov/vuln/detail/CVE-2022-42890"
+        }
+    ],
+    "credits": null,
+    "database_specific": {
+        "severity": "High"
+    }
+}

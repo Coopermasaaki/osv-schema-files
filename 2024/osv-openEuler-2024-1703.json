@@ -1,0 +1,77 @@
+{
+    "schema_version": "1.6.0",
+    "id": "OESA-2024-1703",
+    "modified": "2024-06-07T00:00:00Z",
+    "published": "2024-06-07T00:00:00Z",
+    "withdrawn": "",
+    "aliases": null,
+    "related": [
+        "CVE-2021-3670"
+    ],
+    "summary": "libldb security update",
+    "details": "An extensible library that implements an LDAP like API to access remote LDAP servers, or use local tdb databases.\r\n\r\nSecurity Fix(es):\r\n\r\nMaxQueryDuration not honoured in Samba AD DC LDAP(CVE-2021-3670)",
+    "severity": null,
+    "affected": [
+        {
+            "package": {
+                "ecosystem": "openEuler-20.03-LTS-SP4",
+                "name": "libldb",
+                "purl": "pkg:rpm/libldb@2.0.12-5.oe2003sp4"
+            },
+            "severity": null,
+            "ranges": [
+                {
+                    "type": "ECOSYSTEM",
+                    "repo": "",
+                    "events": [
+                        {
+                            "introduced": "0",
+                            "fixed": "2.0.12-5.oe2003sp4",
+                            "last_affected": "",
+                            "limit": ""
+                        }
+                    ],
+                    "database_specific": null
+                }
+            ],
+            "versions": null,
+            "ecosystem_specific": {
+                "aarch64": [
+                    "libldb-debugsource-2.0.12-5.oe2003sp4.aarch64.rpm",
+                    "python3-ldb-2.0.12-5.oe2003sp4.aarch64.rpm",
+                    "libldb-2.0.12-5.oe2003sp4.aarch64.rpm",
+                    "python-ldb-devel-common-2.0.12-5.oe2003sp4.aarch64.rpm",
+                    "libldb-debuginfo-2.0.12-5.oe2003sp4.aarch64.rpm",
+                    "libldb-devel-2.0.12-5.oe2003sp4.aarch64.rpm",
+                    "python3-ldb-devel-2.0.12-5.oe2003sp4.aarch64.rpm"
+                ],
+                "noarch": [
+                    "libldb-help-2.0.12-5.oe2003sp4.noarch.rpm"
+                ],
+                "src": [
+                    "libldb-2.0.12-5.oe2003sp4.src.rpm"
+                ],
+                "x86_64": [
+                    "libldb-2.0.12-5.oe2003sp4.x86_64.rpm",
+                    "python-ldb-devel-common-2.0.12-5.oe2003sp4.x86_64.rpm",
+                    "libldb-devel-2.0.12-5.oe2003sp4.x86_64.rpm",
+                    "python3-ldb-2.0.12-5.oe2003sp4.x86_64.rpm",
+                    "python3-ldb-devel-2.0.12-5.oe2003sp4.x86_64.rpm",
+                    "libldb-debugsource-2.0.12-5.oe2003sp4.x86_64.rpm",
+                    "libldb-debuginfo-2.0.12-5.oe2003sp4.x86_64.rpm"
+                ]
+            },
+            "database_specific": null
+        }
+    ],
+    "references": [
+        {
+            "type": "ADVISORY",
+            "url": "https://nvd.nist.gov/vuln/detail/CVE-2021-3670"
+        }
+    ],
+    "credits": null,
+    "database_specific": {
+        "severity": "Medium"
+    }
+}

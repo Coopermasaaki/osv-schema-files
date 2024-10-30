@@ -1,0 +1,458 @@
+{
+    "schema_version": "1.6.0",
+    "id": "OESA-2024-1253",
+    "modified": "2024-03-08T00:00:00Z",
+    "published": "2024-03-08T00:00:00Z",
+    "withdrawn": "",
+    "aliases": null,
+    "related": [
+        "CVE-2024-1048"
+    ],
+    "summary": "grub2 security update",
+    "details": "GNU GRUB is a Multiboot boot loader. It was derived from GRUB, the GRand Unified Bootloader, which was originally designed and implemented by Erich Stefan Boleyn.\r\n\r\nSecurity Fix(es):\r\n\r\nA flaw was found in the grub2-set-bootflag utility of grub2. After the fix of CVE-2019-14865, grub2-set-bootflag will create a temporary file with the new grubenv content and rename it to the original grubenv file. If the program is killed before the rename operation, the temporary file will not be removed and may fill the filesystem when invoked multiple times, resulting in a filesystem out of free inodes or blocks.(CVE-2024-1048)",
+    "severity": null,
+    "affected": [
+        {
+            "package": {
+                "ecosystem": "openEuler-20.03-LTS-SP1",
+                "name": "grub2",
+                "purl": "pkg:rpm/grub2@2.04-32.oe1"
+            },
+            "severity": null,
+            "ranges": [
+                {
+                    "type": "ECOSYSTEM",
+                    "repo": "",
+                    "events": [
+                        {
+                            "introduced": "0",
+                            "fixed": "2.04-32.oe1",
+                            "last_affected": "",
+                            "limit": ""
+                        }
+                    ],
+                    "database_specific": null
+                }
+            ],
+            "versions": null,
+            "ecosystem_specific": {
+                "aarch64": [
+                    "grub2-tools-minimal-2.04-32.oe1.aarch64.rpm",
+                    "grub2-efi-aa64-cdboot-2.04-32.oe1.aarch64.rpm",
+                    "grub2-tools-2.04-32.oe1.aarch64.rpm",
+                    "grub2-efi-aa64-2.04-32.oe1.aarch64.rpm",
+                    "grub2-debugsource-2.04-32.oe1.aarch64.rpm",
+                    "grub2-tools-extra-2.04-32.oe1.aarch64.rpm",
+                    "grub2-debuginfo-2.04-32.oe1.aarch64.rpm"
+                ],
+                "noarch": [
+                    "grub2-efi-x64-modules-2.04-32.oe1.noarch.rpm",
+                    "grub2-efi-ia32-modules-2.04-32.oe1.noarch.rpm",
+                    "grub2-help-2.04-32.oe1.noarch.rpm",
+                    "grub2-pc-modules-2.04-32.oe1.noarch.rpm",
+                    "grub2-efi-aa64-modules-2.04-32.oe1.noarch.rpm",
+                    "grub2-common-2.04-32.oe1.noarch.rpm"
+                ],
+                "src": [
+                    "grub2-2.04-32.oe1.src.rpm"
+                ],
+                "x86_64": [
+                    "grub2-tools-extra-2.04-32.oe1.x86_64.rpm",
+                    "grub2-efi-x64-cdboot-2.04-32.oe1.x86_64.rpm",
+                    "grub2-efi-ia32-cdboot-2.04-32.oe1.x86_64.rpm",
+                    "grub2-efi-x64-2.04-32.oe1.x86_64.rpm",
+                    "grub2-debuginfo-2.04-32.oe1.x86_64.rpm",
+                    "grub2-pc-2.04-32.oe1.x86_64.rpm",
+                    "grub2-efi-ia32-2.04-32.oe1.x86_64.rpm",
+                    "grub2-tools-minimal-2.04-32.oe1.x86_64.rpm",
+                    "grub2-tools-efi-2.04-32.oe1.x86_64.rpm",
+                    "grub2-debugsource-2.04-32.oe1.x86_64.rpm",
+                    "grub2-tools-2.04-32.oe1.x86_64.rpm"
+                ]
+            },
+            "database_specific": null
+        },
+        {
+            "package": {
+                "ecosystem": "openEuler-20.03-LTS-SP4",
+                "name": "grub2",
+                "purl": "pkg:rpm/grub2@2.04-38.oe2003sp4"
+            },
+            "severity": null,
+            "ranges": [
+                {
+                    "type": "ECOSYSTEM",
+                    "repo": "",
+                    "events": [
+                        {
+                            "introduced": "0",
+                            "fixed": "2.04-38.oe2003sp4",
+                            "last_affected": "",
+                            "limit": ""
+                        }
+                    ],
+                    "database_specific": null
+                }
+            ],
+            "versions": null,
+            "ecosystem_specific": {
+                "aarch64": [
+                    "grub2-efi-aa64-2.04-38.oe2003sp4.aarch64.rpm",
+                    "grub2-tools-minimal-2.04-38.oe2003sp4.aarch64.rpm",
+                    "grub2-tools-extra-2.04-38.oe2003sp4.aarch64.rpm",
+                    "grub2-tools-2.04-38.oe2003sp4.aarch64.rpm",
+                    "grub2-debugsource-2.04-38.oe2003sp4.aarch64.rpm",
+                    "grub2-debuginfo-2.04-38.oe2003sp4.aarch64.rpm",
+                    "grub2-efi-aa64-cdboot-2.04-38.oe2003sp4.aarch64.rpm"
+                ],
+                "noarch": [
+                    "grub2-efi-aa64-modules-2.04-38.oe2003sp4.noarch.rpm",
+                    "grub2-help-2.04-38.oe2003sp4.noarch.rpm",
+                    "grub2-pc-modules-2.04-38.oe2003sp4.noarch.rpm",
+                    "grub2-efi-x64-modules-2.04-38.oe2003sp4.noarch.rpm",
+                    "grub2-efi-ia32-modules-2.04-38.oe2003sp4.noarch.rpm",
+                    "grub2-common-2.04-38.oe2003sp4.noarch.rpm"
+                ],
+                "src": [
+                    "grub2-2.04-38.oe2003sp4.src.rpm"
+                ],
+                "x86_64": [
+                    "grub2-tools-2.04-38.oe2003sp4.x86_64.rpm",
+                    "grub2-efi-ia32-cdboot-2.04-38.oe2003sp4.x86_64.rpm",
+                    "grub2-debugsource-2.04-38.oe2003sp4.x86_64.rpm",
+                    "grub2-efi-x64-cdboot-2.04-38.oe2003sp4.x86_64.rpm",
+                    "grub2-tools-extra-2.04-38.oe2003sp4.x86_64.rpm",
+                    "grub2-pc-2.04-38.oe2003sp4.x86_64.rpm",
+                    "grub2-tools-efi-2.04-38.oe2003sp4.x86_64.rpm",
+                    "grub2-efi-x64-2.04-38.oe2003sp4.x86_64.rpm",
+                    "grub2-tools-minimal-2.04-38.oe2003sp4.x86_64.rpm",
+                    "grub2-efi-ia32-2.04-38.oe2003sp4.x86_64.rpm",
+                    "grub2-debuginfo-2.04-38.oe2003sp4.x86_64.rpm"
+                ]
+            },
+            "database_specific": null
+        },
+        {
+            "package": {
+                "ecosystem": "openEuler-22.03-LTS",
+                "name": "grub2",
+                "purl": "pkg:rpm/grub2@2.06-41.oe2203"
+            },
+            "severity": null,
+            "ranges": [
+                {
+                    "type": "ECOSYSTEM",
+                    "repo": "",
+                    "events": [
+                        {
+                            "introduced": "0",
+                            "fixed": "2.06-41.oe2203",
+                            "last_affected": "",
+                            "limit": ""
+                        }
+                    ],
+                    "database_specific": null
+                }
+            ],
+            "versions": null,
+            "ecosystem_specific": {
+                "aarch64": [
+                    "grub2-tools-extra-2.06-41.oe2203.aarch64.rpm",
+                    "grub2-tools-minimal-2.06-41.oe2203.aarch64.rpm",
+                    "grub2-efi-aa64-2.06-41.oe2203.aarch64.rpm",
+                    "grub2-tools-2.06-41.oe2203.aarch64.rpm",
+                    "grub2-debuginfo-2.06-41.oe2203.aarch64.rpm",
+                    "grub2-debugsource-2.06-41.oe2203.aarch64.rpm",
+                    "grub2-efi-aa64-cdboot-2.06-41.oe2203.aarch64.rpm",
+                    "grub2-efi-aa64-cdboot-2.06-41.oe2203sp1.aarch64.rpm",
+                    "grub2-debuginfo-2.06-41.oe2203sp1.aarch64.rpm",
+                    "grub2-efi-aa64-2.06-41.oe2203sp1.aarch64.rpm",
+                    "grub2-debugsource-2.06-41.oe2203sp1.aarch64.rpm",
+                    "grub2-tools-extra-2.06-41.oe2203sp1.aarch64.rpm",
+                    "grub2-tools-minimal-2.06-41.oe2203sp1.aarch64.rpm",
+                    "grub2-tools-2.06-41.oe2203sp1.aarch64.rpm",
+                    "grub2-efi-aa64-2.06-41.oe2203sp2.aarch64.rpm",
+                    "grub2-efi-aa64-cdboot-2.06-41.oe2203sp2.aarch64.rpm",
+                    "grub2-debugsource-2.06-41.oe2203sp2.aarch64.rpm",
+                    "grub2-tools-extra-2.06-41.oe2203sp2.aarch64.rpm",
+                    "grub2-tools-minimal-2.06-41.oe2203sp2.aarch64.rpm",
+                    "grub2-debuginfo-2.06-41.oe2203sp2.aarch64.rpm",
+                    "grub2-tools-2.06-41.oe2203sp2.aarch64.rpm",
+                    "grub2-tools-extra-2.06-44.oe2203sp3.aarch64.rpm",
+                    "grub2-efi-aa64-cdboot-2.06-44.oe2203sp3.aarch64.rpm",
+                    "grub2-tools-minimal-2.06-44.oe2203sp3.aarch64.rpm",
+                    "grub2-debuginfo-2.06-44.oe2203sp3.aarch64.rpm",
+                    "grub2-tools-2.06-44.oe2203sp3.aarch64.rpm",
+                    "grub2-debugsource-2.06-44.oe2203sp3.aarch64.rpm",
+                    "grub2-efi-aa64-2.06-44.oe2203sp3.aarch64.rpm"
+                ],
+                "noarch": [
+                    "grub2-efi-ia32-modules-2.06-41.oe2203.noarch.rpm",
+                    "grub2-common-2.06-41.oe2203.noarch.rpm",
+                    "grub2-help-2.06-41.oe2203.noarch.rpm",
+                    "grub2-efi-x64-modules-2.06-41.oe2203.noarch.rpm",
+                    "grub2-efi-aa64-modules-2.06-41.oe2203.noarch.rpm",
+                    "grub2-pc-modules-2.06-41.oe2203.noarch.rpm",
+                    "grub2-efi-aa64-modules-2.06-41.oe2203sp1.noarch.rpm",
+                    "grub2-efi-x64-modules-2.06-41.oe2203sp1.noarch.rpm",
+                    "grub2-help-2.06-41.oe2203sp1.noarch.rpm",
+                    "grub2-common-2.06-41.oe2203sp1.noarch.rpm",
+                    "grub2-pc-modules-2.06-41.oe2203sp1.noarch.rpm",
+                    "grub2-efi-ia32-modules-2.06-41.oe2203sp1.noarch.rpm",
+                    "grub2-efi-ia32-modules-2.06-41.oe2203sp2.noarch.rpm",
+                    "grub2-common-2.06-41.oe2203sp2.noarch.rpm",
+                    "grub2-efi-x64-modules-2.06-41.oe2203sp2.noarch.rpm",
+                    "grub2-pc-modules-2.06-41.oe2203sp2.noarch.rpm",
+                    "grub2-help-2.06-41.oe2203sp2.noarch.rpm",
+                    "grub2-efi-aa64-modules-2.06-41.oe2203sp2.noarch.rpm",
+                    "grub2-efi-ia32-modules-2.06-44.oe2203sp3.noarch.rpm",
+                    "grub2-common-2.06-44.oe2203sp3.noarch.rpm",
+                    "grub2-help-2.06-44.oe2203sp3.noarch.rpm",
+                    "grub2-efi-x64-modules-2.06-44.oe2203sp3.noarch.rpm",
+                    "grub2-efi-aa64-modules-2.06-44.oe2203sp3.noarch.rpm",
+                    "grub2-pc-modules-2.06-44.oe2203sp3.noarch.rpm"
+                ],
+                "src": [
+                    "grub2-2.06-41.oe2203.src.rpm"
+                ],
+                "x86_64": [
+                    "grub2-debuginfo-2.06-41.oe2203.x86_64.rpm",
+                    "grub2-efi-ia32-2.06-41.oe2203.x86_64.rpm",
+                    "grub2-efi-ia32-cdboot-2.06-41.oe2203.x86_64.rpm",
+                    "grub2-efi-x64-2.06-41.oe2203.x86_64.rpm",
+                    "grub2-tools-2.06-41.oe2203.x86_64.rpm",
+                    "grub2-debugsource-2.06-41.oe2203.x86_64.rpm",
+                    "grub2-pc-2.06-41.oe2203.x86_64.rpm",
+                    "grub2-efi-x64-cdboot-2.06-41.oe2203.x86_64.rpm",
+                    "grub2-tools-efi-2.06-41.oe2203.x86_64.rpm",
+                    "grub2-tools-minimal-2.06-41.oe2203.x86_64.rpm",
+                    "grub2-tools-extra-2.06-41.oe2203.x86_64.rpm",
+                    "grub2-tools-extra-2.06-41.oe2203sp1.x86_64.rpm",
+                    "grub2-efi-x64-2.06-41.oe2203sp1.x86_64.rpm",
+                    "grub2-pc-2.06-41.oe2203sp1.x86_64.rpm",
+                    "grub2-efi-ia32-cdboot-2.06-41.oe2203sp1.x86_64.rpm",
+                    "grub2-tools-efi-2.06-41.oe2203sp1.x86_64.rpm",
+                    "grub2-efi-ia32-2.06-41.oe2203sp1.x86_64.rpm",
+                    "grub2-debugsource-2.06-41.oe2203sp1.x86_64.rpm",
+                    "grub2-efi-x64-cdboot-2.06-41.oe2203sp1.x86_64.rpm",
+                    "grub2-debuginfo-2.06-41.oe2203sp1.x86_64.rpm",
+                    "grub2-tools-minimal-2.06-41.oe2203sp1.x86_64.rpm",
+                    "grub2-tools-2.06-41.oe2203sp1.x86_64.rpm",
+                    "grub2-efi-x64-2.06-41.oe2203sp2.x86_64.rpm",
+                    "grub2-pc-2.06-41.oe2203sp2.x86_64.rpm",
+                    "grub2-debugsource-2.06-41.oe2203sp2.x86_64.rpm",
+                    "grub2-efi-ia32-2.06-41.oe2203sp2.x86_64.rpm",
+                    "grub2-tools-efi-2.06-41.oe2203sp2.x86_64.rpm",
+                    "grub2-tools-extra-2.06-41.oe2203sp2.x86_64.rpm",
+                    "grub2-efi-ia32-cdboot-2.06-41.oe2203sp2.x86_64.rpm",
+                    "grub2-debuginfo-2.06-41.oe2203sp2.x86_64.rpm",
+                    "grub2-tools-2.06-41.oe2203sp2.x86_64.rpm",
+                    "grub2-tools-minimal-2.06-41.oe2203sp2.x86_64.rpm",
+                    "grub2-efi-x64-cdboot-2.06-41.oe2203sp2.x86_64.rpm",
+                    "grub2-tools-extra-2.06-44.oe2203sp3.x86_64.rpm",
+                    "grub2-efi-ia32-2.06-44.oe2203sp3.x86_64.rpm",
+                    "grub2-efi-x64-cdboot-2.06-44.oe2203sp3.x86_64.rpm",
+                    "grub2-efi-x64-2.06-44.oe2203sp3.x86_64.rpm",
+                    "grub2-tools-minimal-2.06-44.oe2203sp3.x86_64.rpm",
+                    "grub2-tools-efi-2.06-44.oe2203sp3.x86_64.rpm",
+                    "grub2-debugsource-2.06-44.oe2203sp3.x86_64.rpm",
+                    "grub2-pc-2.06-44.oe2203sp3.x86_64.rpm",
+                    "grub2-debuginfo-2.06-44.oe2203sp3.x86_64.rpm",
+                    "grub2-tools-2.06-44.oe2203sp3.x86_64.rpm",
+                    "grub2-efi-ia32-cdboot-2.06-44.oe2203sp3.x86_64.rpm"
+                ]
+            },
+            "database_specific": null
+        },
+        {
+            "package": {
+                "ecosystem": "openEuler-22.03-LTS-SP1",
+                "name": "grub2",
+                "purl": "pkg:rpm/grub2@2.06-41.oe2203sp1"
+            },
+            "severity": null,
+            "ranges": [
+                {
+                    "type": "ECOSYSTEM",
+                    "repo": "",
+                    "events": [
+                        {
+                            "introduced": "0",
+                            "fixed": "2.06-41.oe2203sp1",
+                            "last_affected": "",
+                            "limit": ""
+                        }
+                    ],
+                    "database_specific": null
+                }
+            ],
+            "versions": null,
+            "ecosystem_specific": {
+                "aarch64": [
+                    "grub2-efi-aa64-cdboot-2.06-41.oe2203sp1.aarch64.rpm",
+                    "grub2-debuginfo-2.06-41.oe2203sp1.aarch64.rpm",
+                    "grub2-efi-aa64-2.06-41.oe2203sp1.aarch64.rpm",
+                    "grub2-debugsource-2.06-41.oe2203sp1.aarch64.rpm",
+                    "grub2-tools-extra-2.06-41.oe2203sp1.aarch64.rpm",
+                    "grub2-tools-minimal-2.06-41.oe2203sp1.aarch64.rpm",
+                    "grub2-tools-2.06-41.oe2203sp1.aarch64.rpm"
+                ],
+                "noarch": [
+                    "grub2-efi-aa64-modules-2.06-41.oe2203sp1.noarch.rpm",
+                    "grub2-efi-x64-modules-2.06-41.oe2203sp1.noarch.rpm",
+                    "grub2-help-2.06-41.oe2203sp1.noarch.rpm",
+                    "grub2-common-2.06-41.oe2203sp1.noarch.rpm",
+                    "grub2-pc-modules-2.06-41.oe2203sp1.noarch.rpm",
+                    "grub2-efi-ia32-modules-2.06-41.oe2203sp1.noarch.rpm"
+                ],
+                "src": [
+                    "grub2-2.06-41.oe2203sp1.src.rpm"
+                ],
+                "x86_64": [
+                    "grub2-tools-extra-2.06-41.oe2203sp1.x86_64.rpm",
+                    "grub2-efi-x64-2.06-41.oe2203sp1.x86_64.rpm",
+                    "grub2-pc-2.06-41.oe2203sp1.x86_64.rpm",
+                    "grub2-efi-ia32-cdboot-2.06-41.oe2203sp1.x86_64.rpm",
+                    "grub2-tools-efi-2.06-41.oe2203sp1.x86_64.rpm",
+                    "grub2-efi-ia32-2.06-41.oe2203sp1.x86_64.rpm",
+                    "grub2-debugsource-2.06-41.oe2203sp1.x86_64.rpm",
+                    "grub2-efi-x64-cdboot-2.06-41.oe2203sp1.x86_64.rpm",
+                    "grub2-debuginfo-2.06-41.oe2203sp1.x86_64.rpm",
+                    "grub2-tools-minimal-2.06-41.oe2203sp1.x86_64.rpm",
+                    "grub2-tools-2.06-41.oe2203sp1.x86_64.rpm"
+                ]
+            },
+            "database_specific": null
+        },
+        {
+            "package": {
+                "ecosystem": "openEuler-22.03-LTS-SP2",
+                "name": "grub2",
+                "purl": "pkg:rpm/grub2@2.06-41.oe2203sp2"
+            },
+            "severity": null,
+            "ranges": [
+                {
+                    "type": "ECOSYSTEM",
+                    "repo": "",
+                    "events": [
+                        {
+                            "introduced": "0",
+                            "fixed": "2.06-41.oe2203sp2",
+                            "last_affected": "",
+                            "limit": ""
+                        }
+                    ],
+                    "database_specific": null
+                }
+            ],
+            "versions": null,
+            "ecosystem_specific": {
+                "aarch64": [
+                    "grub2-efi-aa64-2.06-41.oe2203sp2.aarch64.rpm",
+                    "grub2-efi-aa64-cdboot-2.06-41.oe2203sp2.aarch64.rpm",
+                    "grub2-debugsource-2.06-41.oe2203sp2.aarch64.rpm",
+                    "grub2-tools-extra-2.06-41.oe2203sp2.aarch64.rpm",
+                    "grub2-tools-minimal-2.06-41.oe2203sp2.aarch64.rpm",
+                    "grub2-debuginfo-2.06-41.oe2203sp2.aarch64.rpm",
+                    "grub2-tools-2.06-41.oe2203sp2.aarch64.rpm"
+                ],
+                "noarch": [
+                    "grub2-efi-ia32-modules-2.06-41.oe2203sp2.noarch.rpm",
+                    "grub2-common-2.06-41.oe2203sp2.noarch.rpm",
+                    "grub2-efi-x64-modules-2.06-41.oe2203sp2.noarch.rpm",
+                    "grub2-pc-modules-2.06-41.oe2203sp2.noarch.rpm",
+                    "grub2-help-2.06-41.oe2203sp2.noarch.rpm",
+                    "grub2-efi-aa64-modules-2.06-41.oe2203sp2.noarch.rpm"
+                ],
+                "src": [
+                    "grub2-2.06-41.oe2203sp2.src.rpm"
+                ],
+                "x86_64": [
+                    "grub2-efi-x64-2.06-41.oe2203sp2.x86_64.rpm",
+                    "grub2-pc-2.06-41.oe2203sp2.x86_64.rpm",
+                    "grub2-debugsource-2.06-41.oe2203sp2.x86_64.rpm",
+                    "grub2-efi-ia32-2.06-41.oe2203sp2.x86_64.rpm",
+                    "grub2-tools-efi-2.06-41.oe2203sp2.x86_64.rpm",
+                    "grub2-tools-extra-2.06-41.oe2203sp2.x86_64.rpm",
+                    "grub2-efi-ia32-cdboot-2.06-41.oe2203sp2.x86_64.rpm",
+                    "grub2-debuginfo-2.06-41.oe2203sp2.x86_64.rpm",
+                    "grub2-tools-2.06-41.oe2203sp2.x86_64.rpm",
+                    "grub2-tools-minimal-2.06-41.oe2203sp2.x86_64.rpm",
+                    "grub2-efi-x64-cdboot-2.06-41.oe2203sp2.x86_64.rpm"
+                ]
+            },
+            "database_specific": null
+        },
+        {
+            "package": {
+                "ecosystem": "openEuler-22.03-LTS-SP3",
+                "name": "grub2",
+                "purl": "pkg:rpm/grub2@2.06-44.oe2203sp3"
+            },
+            "severity": null,
+            "ranges": [
+                {
+                    "type": "ECOSYSTEM",
+                    "repo": "",
+                    "events": [
+                        {
+                            "introduced": "0",
+                            "fixed": "2.06-44.oe2203sp3",
+                            "last_affected": "",
+                            "limit": ""
+                        }
+                    ],
+                    "database_specific": null
+                }
+            ],
+            "versions": null,
+            "ecosystem_specific": {
+                "aarch64": [
+                    "grub2-tools-extra-2.06-44.oe2203sp3.aarch64.rpm",
+                    "grub2-efi-aa64-cdboot-2.06-44.oe2203sp3.aarch64.rpm",
+                    "grub2-tools-minimal-2.06-44.oe2203sp3.aarch64.rpm",
+                    "grub2-debuginfo-2.06-44.oe2203sp3.aarch64.rpm",
+                    "grub2-tools-2.06-44.oe2203sp3.aarch64.rpm",
+                    "grub2-debugsource-2.06-44.oe2203sp3.aarch64.rpm",
+                    "grub2-efi-aa64-2.06-44.oe2203sp3.aarch64.rpm"
+                ],
+                "noarch": [
+                    "grub2-efi-ia32-modules-2.06-44.oe2203sp3.noarch.rpm",
+                    "grub2-common-2.06-44.oe2203sp3.noarch.rpm",
+                    "grub2-help-2.06-44.oe2203sp3.noarch.rpm",
+                    "grub2-efi-x64-modules-2.06-44.oe2203sp3.noarch.rpm",
+                    "grub2-efi-aa64-modules-2.06-44.oe2203sp3.noarch.rpm",
+                    "grub2-pc-modules-2.06-44.oe2203sp3.noarch.rpm"
+                ],
+                "src": [
+                    "grub2-2.06-44.oe2203sp3.src.rpm"
+                ],
+                "x86_64": [
+                    "grub2-tools-extra-2.06-44.oe2203sp3.x86_64.rpm",
+                    "grub2-efi-ia32-2.06-44.oe2203sp3.x86_64.rpm",
+                    "grub2-efi-x64-cdboot-2.06-44.oe2203sp3.x86_64.rpm",
+                    "grub2-efi-x64-2.06-44.oe2203sp3.x86_64.rpm",
+                    "grub2-tools-minimal-2.06-44.oe2203sp3.x86_64.rpm",
+                    "grub2-tools-efi-2.06-44.oe2203sp3.x86_64.rpm",
+                    "grub2-debugsource-2.06-44.oe2203sp3.x86_64.rpm",
+                    "grub2-pc-2.06-44.oe2203sp3.x86_64.rpm",
+                    "grub2-debuginfo-2.06-44.oe2203sp3.x86_64.rpm",
+                    "grub2-tools-2.06-44.oe2203sp3.x86_64.rpm",
+                    "grub2-efi-ia32-cdboot-2.06-44.oe2203sp3.x86_64.rpm"
+                ]
+            },
+            "database_specific": null
+        }
+    ],
+    "references": [
+        {
+            "type": "ADVISORY",
+            "url": "https://nvd.nist.gov/vuln/detail/CVE-2024-1048"
+        }
+    ],
+    "credits": null,
+    "database_specific": {
+        "severity": "Low"
+    }
+}

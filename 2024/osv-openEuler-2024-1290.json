@@ -1,0 +1,66 @@
+{
+    "schema_version": "1.6.0",
+    "id": "OESA-2024-1290",
+    "modified": "2024-03-15T00:00:00Z",
+    "published": "2024-03-15T00:00:00Z",
+    "withdrawn": "",
+    "aliases": null,
+    "related": [
+        "CVE-2021-33632"
+    ],
+    "summary": "iSulad security update",
+    "details": "This is a umbrella project for gRPC-services based Lightweight Container Runtime Daemon, written by C.\r\n\r\nSecurity Fix(es):\r\n\r\n在isulad服务初始化阶段，会进行临时文件的正确性检查，如果检查不通过则重新创建文件，在检查与创建之间，存在一个条件竞争问题，攻击者可以通过利用该漏洞进行提权。(CVE-2021-33632)",
+    "severity": null,
+    "affected": [
+        {
+            "package": {
+                "ecosystem": "openEuler-22.03-LTS-SP1",
+                "name": "iSulad",
+                "purl": "pkg:rpm/iSulad@2.0.18-16.oe2203sp1"
+            },
+            "severity": null,
+            "ranges": [
+                {
+                    "type": "ECOSYSTEM",
+                    "repo": "",
+                    "events": [
+                        {
+                            "introduced": "0",
+                            "fixed": "2.0.18-16.oe2203sp1",
+                            "last_affected": "",
+                            "limit": ""
+                        }
+                    ],
+                    "database_specific": null
+                }
+            ],
+            "versions": null,
+            "ecosystem_specific": {
+                "aarch64": [
+                    "iSulad-2.0.18-16.oe2203sp1.aarch64.rpm",
+                    "iSulad-debuginfo-2.0.18-16.oe2203sp1.aarch64.rpm",
+                    "iSulad-debugsource-2.0.18-16.oe2203sp1.aarch64.rpm"
+                ],
+                "src": [
+                    "iSulad-2.0.18-16.oe2203sp1.src.rpm"
+                ],
+                "x86_64": [
+                    "iSulad-debuginfo-2.0.18-16.oe2203sp1.x86_64.rpm",
+                    "iSulad-2.0.18-16.oe2203sp1.x86_64.rpm",
+                    "iSulad-debugsource-2.0.18-16.oe2203sp1.x86_64.rpm"
+                ]
+            },
+            "database_specific": null
+        }
+    ],
+    "references": [
+        {
+            "type": "ADVISORY",
+            "url": "https://nvd.nist.gov/vuln/detail/CVE-2021-33632"
+        }
+    ],
+    "credits": null,
+    "database_specific": {
+        "severity": "High"
+    }
+}

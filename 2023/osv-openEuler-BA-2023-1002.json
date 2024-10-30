@@ -1,0 +1,87 @@
+{
+    "schema_version": "1.6.0",
+    "id": "OESAcvrf-openEuler-BA-2023-1002",
+    "modified": "2023-12-15T00:00:00Z",
+    "published": "2023-12-15T00:00:00Z",
+    "withdrawn": "",
+    "aliases": null,
+    "related": [
+        ""
+    ],
+    "summary": "kernel bug update",
+    "details": "呈现给guest的PMU版本限制为8.1，否则在硬件PMU版本大于8.1的主机上创建虚拟机时，虚拟机会panic\n\n(BUG-2023-I8K8XV)",
+    "severity": null,
+    "affected": [
+        {
+            "package": {
+                "ecosystem": "openEuler-20.03-LTS-SP3",
+                "name": "kernel",
+                "purl": "pkg:rpm/kernel@4.19.90-2312.3.0.0230.oe1"
+            },
+            "severity": null,
+            "ranges": [
+                {
+                    "type": "ECOSYSTEM",
+                    "repo": "",
+                    "events": [
+                        {
+                            "introduced": "0",
+                            "fixed": "4.19.90-2312.3.0.0230.oe1",
+                            "last_affected": "",
+                            "limit": ""
+                        }
+                    ],
+                    "database_specific": null
+                }
+            ],
+            "versions": null,
+            "ecosystem_specific": {
+                "aarch64": [
+                    "python2-perf-debuginfo-4.19.90-2312.3.0.0230.oe1.aarch64.rpm",
+                    "kernel-tools-4.19.90-2312.3.0.0230.oe1.aarch64.rpm",
+                    "bpftool-debuginfo-4.19.90-2312.3.0.0230.oe1.aarch64.rpm",
+                    "kernel-debugsource-4.19.90-2312.3.0.0230.oe1.aarch64.rpm",
+                    "perf-4.19.90-2312.3.0.0230.oe1.aarch64.rpm",
+                    "kernel-tools-devel-4.19.90-2312.3.0.0230.oe1.aarch64.rpm",
+                    "python3-perf-debuginfo-4.19.90-2312.3.0.0230.oe1.aarch64.rpm",
+                    "python3-perf-4.19.90-2312.3.0.0230.oe1.aarch64.rpm",
+                    "kernel-source-4.19.90-2312.3.0.0230.oe1.aarch64.rpm",
+                    "python2-perf-4.19.90-2312.3.0.0230.oe1.aarch64.rpm",
+                    "kernel-tools-debuginfo-4.19.90-2312.3.0.0230.oe1.aarch64.rpm",
+                    "kernel-debuginfo-4.19.90-2312.3.0.0230.oe1.aarch64.rpm",
+                    "kernel-4.19.90-2312.3.0.0230.oe1.aarch64.rpm",
+                    "kernel-devel-4.19.90-2312.3.0.0230.oe1.aarch64.rpm",
+                    "perf-debuginfo-4.19.90-2312.3.0.0230.oe1.aarch64.rpm",
+                    "bpftool-4.19.90-2312.3.0.0230.oe1.aarch64.rpm"
+                ],
+                "src": [
+                    "kernel-4.19.90-2312.3.0.0230.oe1.src.rpm"
+                ],
+                "x86_64": [
+                    "bpftool-4.19.90-2312.3.0.0230.oe1.x86_64.rpm",
+                    "python3-perf-4.19.90-2312.3.0.0230.oe1.x86_64.rpm",
+                    "python3-perf-debuginfo-4.19.90-2312.3.0.0230.oe1.x86_64.rpm",
+                    "kernel-devel-4.19.90-2312.3.0.0230.oe1.x86_64.rpm",
+                    "kernel-tools-4.19.90-2312.3.0.0230.oe1.x86_64.rpm",
+                    "perf-4.19.90-2312.3.0.0230.oe1.x86_64.rpm",
+                    "kernel-4.19.90-2312.3.0.0230.oe1.x86_64.rpm",
+                    "bpftool-debuginfo-4.19.90-2312.3.0.0230.oe1.x86_64.rpm",
+                    "kernel-source-4.19.90-2312.3.0.0230.oe1.x86_64.rpm",
+                    "kernel-debugsource-4.19.90-2312.3.0.0230.oe1.x86_64.rpm",
+                    "perf-debuginfo-4.19.90-2312.3.0.0230.oe1.x86_64.rpm",
+                    "kernel-debuginfo-4.19.90-2312.3.0.0230.oe1.x86_64.rpm",
+                    "kernel-tools-devel-4.19.90-2312.3.0.0230.oe1.x86_64.rpm",
+                    "python2-perf-4.19.90-2312.3.0.0230.oe1.x86_64.rpm",
+                    "kernel-tools-debuginfo-4.19.90-2312.3.0.0230.oe1.x86_64.rpm",
+                    "python2-perf-debuginfo-4.19.90-2312.3.0.0230.oe1.x86_64.rpm"
+                ]
+            },
+            "database_specific": null
+        }
+    ],
+    "references": [],
+    "credits": null,
+    "database_specific": {
+        "severity": "High"
+    }
+}

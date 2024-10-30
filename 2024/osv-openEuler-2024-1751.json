@@ -1,0 +1,69 @@
+{
+    "schema_version": "1.6.0",
+    "id": "OESA-2024-1751",
+    "modified": "2024-06-21T00:00:00Z",
+    "published": "2024-06-21T00:00:00Z",
+    "withdrawn": "",
+    "aliases": null,
+    "related": [
+        "CVE-2024-37388"
+    ],
+    "summary": "python-lxml security update",
+    "details": "The lxml XML toolkit is a Pythonic binding for the C libraries libxml2 and libxslt. \\ It is unique in that it combines the speed and XML feature completeness of these libraries with \\ the simplicity of a native Python API, mostly compatible but superior to the well-known ElementTree API. \\ The latest release works with all CPython versions from 2.7 to 3.7.\r\n\r\nSecurity Fix(es):\r\n\r\nAn XML External Entity (XXE) vulnerability in the ebookmeta.get_metadata function of lxml before v4.9.1 allows attackers to access sensitive information or cause a Denial of Service (DoS) via crafted XML input.(CVE-2024-37388)",
+    "severity": null,
+    "affected": [
+        {
+            "package": {
+                "ecosystem": "openEuler-22.03-LTS-SP1",
+                "name": "python-lxml",
+                "purl": "pkg:rpm/python-lxml@4.7.1-6.oe2203sp1"
+            },
+            "severity": null,
+            "ranges": [
+                {
+                    "type": "ECOSYSTEM",
+                    "repo": "",
+                    "events": [
+                        {
+                            "introduced": "0",
+                            "fixed": "4.7.1-6.oe2203sp1",
+                            "last_affected": "",
+                            "limit": ""
+                        }
+                    ],
+                    "database_specific": null
+                }
+            ],
+            "versions": null,
+            "ecosystem_specific": {
+                "aarch64": [
+                    "python3-lxml-4.7.1-6.oe2203sp1.aarch64.rpm",
+                    "python-lxml-debuginfo-4.7.1-6.oe2203sp1.aarch64.rpm",
+                    "python-lxml-debugsource-4.7.1-6.oe2203sp1.aarch64.rpm"
+                ],
+                "noarch": [
+                    "python-lxml-help-4.7.1-6.oe2203sp1.noarch.rpm"
+                ],
+                "src": [
+                    "python-lxml-4.7.1-6.oe2203sp1.src.rpm"
+                ],
+                "x86_64": [
+                    "python-lxml-debuginfo-4.7.1-6.oe2203sp1.x86_64.rpm",
+                    "python-lxml-debugsource-4.7.1-6.oe2203sp1.x86_64.rpm",
+                    "python3-lxml-4.7.1-6.oe2203sp1.x86_64.rpm"
+                ]
+            },
+            "database_specific": null
+        }
+    ],
+    "references": [
+        {
+            "type": "ADVISORY",
+            "url": "https://nvd.nist.gov/vuln/detail/CVE-2024-37388"
+        }
+    ],
+    "credits": null,
+    "database_specific": {
+        "severity": "Medium"
+    }
+}

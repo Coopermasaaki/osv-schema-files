@@ -1,0 +1,194 @@
+{
+    "schema_version": "1.6.0",
+    "id": "OESA-2024-1756",
+    "modified": "2024-06-28T00:00:00Z",
+    "published": "2024-06-28T00:00:00Z",
+    "withdrawn": "",
+    "aliases": null,
+    "related": [
+        "CVE-2024-38428"
+    ],
+    "summary": "wget security update",
+    "details": "GNU Wget is a free software package for retrieving files using HTTP, HTTPS, FTP and FTPS the most widely-used Internet protocols. It is a non-interactive commandline tool, so it may easily be called from scripts, cron jobs, terminals without X-Windows support, etc.\r\n\r\nSecurity Fix(es):\r\n\r\nurl.c in GNU Wget through 1.24.5 mishandles semicolons in the userinfo subcomponent of a URI, and thus there may be insecure behavior in which data that was supposed to be in the userinfo subcomponent is misinterpreted to be part of the host subcomponent.(CVE-2024-38428)",
+    "severity": null,
+    "affected": [
+        {
+            "package": {
+                "ecosystem": "openEuler-20.03-LTS-SP4",
+                "name": "wget",
+                "purl": "pkg:rpm/wget@1.20.3-5.oe2003sp4"
+            },
+            "severity": null,
+            "ranges": [
+                {
+                    "type": "ECOSYSTEM",
+                    "repo": "",
+                    "events": [
+                        {
+                            "introduced": "0",
+                            "fixed": "1.20.3-5.oe2003sp4",
+                            "last_affected": "",
+                            "limit": ""
+                        }
+                    ],
+                    "database_specific": null
+                }
+            ],
+            "versions": null,
+            "ecosystem_specific": {
+                "aarch64": [
+                    "wget-1.20.3-5.oe2003sp4.aarch64.rpm",
+                    "wget-help-1.20.3-5.oe2003sp4.aarch64.rpm",
+                    "wget-debugsource-1.20.3-5.oe2003sp4.aarch64.rpm",
+                    "wget-debuginfo-1.20.3-5.oe2003sp4.aarch64.rpm"
+                ],
+                "src": [
+                    "wget-1.20.3-5.oe2003sp4.src.rpm"
+                ],
+                "x86_64": [
+                    "wget-debugsource-1.20.3-5.oe2003sp4.x86_64.rpm",
+                    "wget-1.20.3-5.oe2003sp4.x86_64.rpm",
+                    "wget-help-1.20.3-5.oe2003sp4.x86_64.rpm",
+                    "wget-debuginfo-1.20.3-5.oe2003sp4.x86_64.rpm"
+                ]
+            },
+            "database_specific": null
+        },
+        {
+            "package": {
+                "ecosystem": "openEuler-22.03-LTS-SP1",
+                "name": "wget",
+                "purl": "pkg:rpm/wget@1.21.2-5.oe2203sp1"
+            },
+            "severity": null,
+            "ranges": [
+                {
+                    "type": "ECOSYSTEM",
+                    "repo": "",
+                    "events": [
+                        {
+                            "introduced": "0",
+                            "fixed": "1.21.2-5.oe2203sp1",
+                            "last_affected": "",
+                            "limit": ""
+                        }
+                    ],
+                    "database_specific": null
+                }
+            ],
+            "versions": null,
+            "ecosystem_specific": {
+                "aarch64": [
+                    "wget-debuginfo-1.21.2-5.oe2203sp1.aarch64.rpm",
+                    "wget-1.21.2-5.oe2203sp1.aarch64.rpm",
+                    "wget-help-1.21.2-5.oe2203sp1.aarch64.rpm",
+                    "wget-debugsource-1.21.2-5.oe2203sp1.aarch64.rpm"
+                ],
+                "src": [
+                    "wget-1.21.2-5.oe2203sp1.src.rpm"
+                ],
+                "x86_64": [
+                    "wget-help-1.21.2-5.oe2203sp1.x86_64.rpm",
+                    "wget-debuginfo-1.21.2-5.oe2203sp1.x86_64.rpm",
+                    "wget-debugsource-1.21.2-5.oe2203sp1.x86_64.rpm",
+                    "wget-1.21.2-5.oe2203sp1.x86_64.rpm"
+                ]
+            },
+            "database_specific": null
+        },
+        {
+            "package": {
+                "ecosystem": "openEuler-22.03-LTS-SP3",
+                "name": "wget",
+                "purl": "pkg:rpm/wget@1.21.2-5.oe2203sp3"
+            },
+            "severity": null,
+            "ranges": [
+                {
+                    "type": "ECOSYSTEM",
+                    "repo": "",
+                    "events": [
+                        {
+                            "introduced": "0",
+                            "fixed": "1.21.2-5.oe2203sp3",
+                            "last_affected": "",
+                            "limit": ""
+                        }
+                    ],
+                    "database_specific": null
+                }
+            ],
+            "versions": null,
+            "ecosystem_specific": {
+                "aarch64": [
+                    "wget-1.21.2-5.oe2203sp3.aarch64.rpm",
+                    "wget-debugsource-1.21.2-5.oe2203sp3.aarch64.rpm",
+                    "wget-help-1.21.2-5.oe2203sp3.aarch64.rpm",
+                    "wget-debuginfo-1.21.2-5.oe2203sp3.aarch64.rpm"
+                ],
+                "src": [
+                    "wget-1.21.2-5.oe2203sp3.src.rpm"
+                ],
+                "x86_64": [
+                    "wget-help-1.21.2-5.oe2203sp3.x86_64.rpm",
+                    "wget-debugsource-1.21.2-5.oe2203sp3.x86_64.rpm",
+                    "wget-debuginfo-1.21.2-5.oe2203sp3.x86_64.rpm",
+                    "wget-1.21.2-5.oe2203sp3.x86_64.rpm"
+                ]
+            },
+            "database_specific": null
+        },
+        {
+            "package": {
+                "ecosystem": "openEuler-24.03-LTS",
+                "name": "wget",
+                "purl": "pkg:rpm/wget@1.21.4-2.oe2403"
+            },
+            "severity": null,
+            "ranges": [
+                {
+                    "type": "ECOSYSTEM",
+                    "repo": "",
+                    "events": [
+                        {
+                            "introduced": "0",
+                            "fixed": "1.21.4-2.oe2403",
+                            "last_affected": "",
+                            "limit": ""
+                        }
+                    ],
+                    "database_specific": null
+                }
+            ],
+            "versions": null,
+            "ecosystem_specific": {
+                "aarch64": [
+                    "wget-help-1.21.4-2.oe2403.aarch64.rpm",
+                    "wget-1.21.4-2.oe2403.aarch64.rpm",
+                    "wget-debuginfo-1.21.4-2.oe2403.aarch64.rpm",
+                    "wget-debugsource-1.21.4-2.oe2403.aarch64.rpm"
+                ],
+                "src": [
+                    "wget-1.21.4-2.oe2403.src.rpm"
+                ],
+                "x86_64": [
+                    "wget-1.21.4-2.oe2403.x86_64.rpm",
+                    "wget-debugsource-1.21.4-2.oe2403.x86_64.rpm",
+                    "wget-debuginfo-1.21.4-2.oe2403.x86_64.rpm",
+                    "wget-help-1.21.4-2.oe2403.x86_64.rpm"
+                ]
+            },
+            "database_specific": null
+        }
+    ],
+    "references": [
+        {
+            "type": "ADVISORY",
+            "url": "https://nvd.nist.gov/vuln/detail/CVE-2024-38428"
+        }
+    ],
+    "credits": null,
+    "database_specific": {
+        "severity": "Medium"
+    }
+}

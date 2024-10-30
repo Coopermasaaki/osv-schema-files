@@ -1,0 +1,62 @@
+{
+    "schema_version": "1.6.0",
+    "id": "OESA-2021-1194",
+    "modified": "2021-05-24T00:00:00Z",
+    "published": "2021-05-24T00:00:00Z",
+    "withdrawn": "",
+    "aliases": null,
+    "related": [
+        "CVE-2021-20095"
+    ],
+    "summary": "babel security update",
+    "details": "Babel is an integrated collection of utilities that assist in internationalizing and localizing Python applications, with an emphasis on web-based applications.\r\n\r\nSecurity Fix(es):\r\n\r\nRelative Path Traversal in Babel 2.9.0 allows an attacker to load arbitrary locale files on disk and execute arbitrary code.(CVE-2021-20095)",
+    "severity": null,
+    "affected": [
+        {
+            "package": {
+                "ecosystem": "openEuler-20.03-LTS-SP1",
+                "name": "babel",
+                "purl": "pkg:rpm/babel@2.8.0-3.oe1"
+            },
+            "severity": null,
+            "ranges": [
+                {
+                    "type": "ECOSYSTEM",
+                    "repo": "",
+                    "events": [
+                        {
+                            "introduced": "0",
+                            "fixed": "2.8.0-3.oe1",
+                            "last_affected": "",
+                            "limit": ""
+                        }
+                    ],
+                    "database_specific": null
+                }
+            ],
+            "versions": null,
+            "ecosystem_specific": {
+                "noarch": [
+                    "python2-babel-2.8.0-3.oe1.noarch.rpm",
+                    "babel-help-2.8.0-3.oe1.noarch.rpm",
+                    "python3-babel-2.8.0-3.oe1.noarch.rpm",
+                    "babel-2.8.0-3.oe1.noarch.rpm"
+                ],
+                "src": [
+                    "babel-2.8.0-3.oe1.src.rpm"
+                ]
+            },
+            "database_specific": null
+        }
+    ],
+    "references": [
+        {
+            "type": "ADVISORY",
+            "url": "https://nvd.nist.gov/vuln/detail/CVE-2021-20095"
+        }
+    ],
+    "credits": null,
+    "database_specific": {
+        "severity": "High"
+    }
+}

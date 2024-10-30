@@ -1,0 +1,70 @@
+{
+    "schema_version": "1.6.0",
+    "id": "OESA-2024-2057",
+    "modified": "2024-08-23T00:00:00Z",
+    "published": "2024-08-23T00:00:00Z",
+    "withdrawn": "",
+    "aliases": null,
+    "related": [
+        "CVE-2023-23602"
+    ],
+    "summary": "mozjs78 security update",
+    "details": "SpiderMonkey is the code-name for Mozilla Firefox\u0026apos;s C++ implementation of JavaScript. It is intended to be embedded in other applications that provide host environments for JavaScript.\r\n\r\nSecurity Fix(es):\r\n\r\nA mishandled security check when creating a WebSocket in a WebWorker caused the Content Security Policy connect-src header to be ignored. This could lead to connections to restricted origins from inside WebWorkers. This vulnerability affects Firefox \u0026lt; 109, Thunderbird \u0026lt; 102.7, and Firefox ESR \u0026lt; 102.7.(CVE-2023-23602)",
+    "severity": null,
+    "affected": [
+        {
+            "package": {
+                "ecosystem": "openEuler-22.03-LTS-SP3",
+                "name": "mozjs78",
+                "purl": "pkg:rpm/mozjs78@mozjs91-91.6.0-5.oe2203sp3"
+            },
+            "severity": null,
+            "ranges": [
+                {
+                    "type": "ECOSYSTEM",
+                    "repo": "",
+                    "events": [
+                        {
+                            "introduced": "0",
+                            "fixed": "mozjs91-91.6.0-5.oe2203sp3",
+                            "last_affected": "",
+                            "limit": ""
+                        }
+                    ],
+                    "database_specific": null
+                }
+            ],
+            "versions": null,
+            "ecosystem_specific": {
+                "aarch64": [
+                    "libmozjs-91-0-91.6.0-5.oe2203sp3.aarch64.rpm",
+                    "mozjs91-91.6.0-5.oe2203sp3.aarch64.rpm",
+                    "mozjs91-debuginfo-91.6.0-5.oe2203sp3.aarch64.rpm",
+                    "mozjs91-debugsource-91.6.0-5.oe2203sp3.aarch64.rpm",
+                    "mozjs91-devel-91.6.0-5.oe2203sp3.aarch64.rpm"
+                ],
+                "src": [
+                    "mozjs91-91.6.0-5.oe2203sp3.src.rpm"
+                ],
+                "x86_64": [
+                    "libmozjs-91-0-91.6.0-5.oe2203sp3.x86_64.rpm",
+                    "mozjs91-91.6.0-5.oe2203sp3.x86_64.rpm",
+                    "mozjs91-debuginfo-91.6.0-5.oe2203sp3.x86_64.rpm",
+                    "mozjs91-debugsource-91.6.0-5.oe2203sp3.x86_64.rpm",
+                    "mozjs91-devel-91.6.0-5.oe2203sp3.x86_64.rpm"
+                ]
+            },
+            "database_specific": null
+        }
+    ],
+    "references": [
+        {
+            "type": "ADVISORY",
+            "url": "https://nvd.nist.gov/vuln/detail/CVE-2023-23602"
+        }
+    ],
+    "credits": null,
+    "database_specific": {
+        "severity": "Medium"
+    }
+}

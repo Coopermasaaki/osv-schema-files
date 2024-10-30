@@ -1,0 +1,202 @@
+{
+    "schema_version": "1.6.0",
+    "id": "OESA-2023-1280",
+    "modified": "2023-05-19T00:00:00Z",
+    "published": "2023-05-19T00:00:00Z",
+    "withdrawn": "",
+    "aliases": null,
+    "related": [
+        "CVE-2023-1729"
+    ],
+    "summary": "LibRaw security update",
+    "details": "LibRaw is a library for reading RAW files from digital photo cameras (CRW/CR2, NEF, RAF, etc, virtually all RAW formats are supported).It pays special attention to correct retrieval of data required for subsequent RAW conversion.The library is intended for embedding in RAW converters, data analyzers, and other programs using RAW files as the initial data.\r\n\r\nSecurity Fix(es):\r\n\r\nA flaw was found in LibRaw. A heap-buffer-overflow in raw2image_ex() caused by a maliciously crafted file may lead to an application crash.(CVE-2023-1729)",
+    "severity": null,
+    "affected": [
+        {
+            "package": {
+                "ecosystem": "openEuler-20.03-LTS-SP1",
+                "name": "LibRaw",
+                "purl": "pkg:rpm/LibRaw@0.20.2-5.oe1"
+            },
+            "severity": null,
+            "ranges": [
+                {
+                    "type": "ECOSYSTEM",
+                    "repo": "",
+                    "events": [
+                        {
+                            "introduced": "0",
+                            "fixed": "0.20.2-5.oe1",
+                            "last_affected": "",
+                            "limit": ""
+                        }
+                    ],
+                    "database_specific": null
+                }
+            ],
+            "versions": null,
+            "ecosystem_specific": {
+                "aarch64": [
+                    "LibRaw-debugsource-0.20.2-5.oe1.aarch64.rpm",
+                    "LibRaw-0.20.2-5.oe1.aarch64.rpm",
+                    "LibRaw-debuginfo-0.20.2-5.oe1.aarch64.rpm",
+                    "LibRaw-devel-0.20.2-5.oe1.aarch64.rpm"
+                ],
+                "src": [
+                    "LibRaw-0.20.2-5.oe1.src.rpm"
+                ],
+                "x86_64": [
+                    "LibRaw-0.20.2-5.oe1.x86_64.rpm",
+                    "LibRaw-devel-0.20.2-5.oe1.x86_64.rpm",
+                    "LibRaw-debugsource-0.20.2-5.oe1.x86_64.rpm",
+                    "LibRaw-debuginfo-0.20.2-5.oe1.x86_64.rpm"
+                ]
+            },
+            "database_specific": null
+        },
+        {
+            "package": {
+                "ecosystem": "openEuler-20.03-LTS-SP3",
+                "name": "LibRaw",
+                "purl": "pkg:rpm/LibRaw@0.20.2-5.oe1"
+            },
+            "severity": null,
+            "ranges": [
+                {
+                    "type": "ECOSYSTEM",
+                    "repo": "",
+                    "events": [
+                        {
+                            "introduced": "0",
+                            "fixed": "0.20.2-5.oe1",
+                            "last_affected": "",
+                            "limit": ""
+                        }
+                    ],
+                    "database_specific": null
+                }
+            ],
+            "versions": null,
+            "ecosystem_specific": {
+                "aarch64": [
+                    "LibRaw-devel-0.20.2-5.oe1.aarch64.rpm",
+                    "LibRaw-debugsource-0.20.2-5.oe1.aarch64.rpm",
+                    "LibRaw-0.20.2-5.oe1.aarch64.rpm",
+                    "LibRaw-debuginfo-0.20.2-5.oe1.aarch64.rpm"
+                ],
+                "src": [
+                    "LibRaw-0.20.2-5.oe1.src.rpm"
+                ],
+                "x86_64": [
+                    "LibRaw-debugsource-0.20.2-5.oe1.x86_64.rpm",
+                    "LibRaw-devel-0.20.2-5.oe1.x86_64.rpm",
+                    "LibRaw-debuginfo-0.20.2-5.oe1.x86_64.rpm",
+                    "LibRaw-0.20.2-5.oe1.x86_64.rpm"
+                ]
+            },
+            "database_specific": null
+        },
+        {
+            "package": {
+                "ecosystem": "openEuler-22.03-LTS",
+                "name": "LibRaw",
+                "purl": "pkg:rpm/LibRaw@0.20.2-6.oe2203"
+            },
+            "severity": null,
+            "ranges": [
+                {
+                    "type": "ECOSYSTEM",
+                    "repo": "",
+                    "events": [
+                        {
+                            "introduced": "0",
+                            "fixed": "0.20.2-6.oe2203",
+                            "last_affected": "",
+                            "limit": ""
+                        }
+                    ],
+                    "database_specific": null
+                }
+            ],
+            "versions": null,
+            "ecosystem_specific": {
+                "aarch64": [
+                    "LibRaw-debuginfo-0.20.2-6.oe2203.aarch64.rpm",
+                    "LibRaw-0.20.2-6.oe2203.aarch64.rpm",
+                    "LibRaw-devel-0.20.2-6.oe2203.aarch64.rpm",
+                    "LibRaw-debugsource-0.20.2-6.oe2203.aarch64.rpm",
+                    "LibRaw-0.20.2-6.oe2203sp1.aarch64.rpm",
+                    "LibRaw-debuginfo-0.20.2-6.oe2203sp1.aarch64.rpm",
+                    "LibRaw-devel-0.20.2-6.oe2203sp1.aarch64.rpm",
+                    "LibRaw-debugsource-0.20.2-6.oe2203sp1.aarch64.rpm"
+                ],
+                "src": [
+                    "LibRaw-0.20.2-6.oe2203.src.rpm"
+                ],
+                "x86_64": [
+                    "LibRaw-0.20.2-6.oe2203.x86_64.rpm",
+                    "LibRaw-devel-0.20.2-6.oe2203.x86_64.rpm",
+                    "LibRaw-debuginfo-0.20.2-6.oe2203.x86_64.rpm",
+                    "LibRaw-debugsource-0.20.2-6.oe2203.x86_64.rpm",
+                    "LibRaw-debuginfo-0.20.2-6.oe2203sp1.x86_64.rpm",
+                    "LibRaw-devel-0.20.2-6.oe2203sp1.x86_64.rpm",
+                    "LibRaw-debugsource-0.20.2-6.oe2203sp1.x86_64.rpm",
+                    "LibRaw-0.20.2-6.oe2203sp1.x86_64.rpm"
+                ]
+            },
+            "database_specific": null
+        },
+        {
+            "package": {
+                "ecosystem": "openEuler-22.03-LTS-SP1",
+                "name": "LibRaw",
+                "purl": "pkg:rpm/LibRaw@0.20.2-6.oe2203sp1"
+            },
+            "severity": null,
+            "ranges": [
+                {
+                    "type": "ECOSYSTEM",
+                    "repo": "",
+                    "events": [
+                        {
+                            "introduced": "0",
+                            "fixed": "0.20.2-6.oe2203sp1",
+                            "last_affected": "",
+                            "limit": ""
+                        }
+                    ],
+                    "database_specific": null
+                }
+            ],
+            "versions": null,
+            "ecosystem_specific": {
+                "aarch64": [
+                    "LibRaw-0.20.2-6.oe2203sp1.aarch64.rpm",
+                    "LibRaw-debuginfo-0.20.2-6.oe2203sp1.aarch64.rpm",
+                    "LibRaw-devel-0.20.2-6.oe2203sp1.aarch64.rpm",
+                    "LibRaw-debugsource-0.20.2-6.oe2203sp1.aarch64.rpm"
+                ],
+                "src": [
+                    "LibRaw-0.20.2-6.oe2203sp1.src.rpm"
+                ],
+                "x86_64": [
+                    "LibRaw-debuginfo-0.20.2-6.oe2203sp1.x86_64.rpm",
+                    "LibRaw-devel-0.20.2-6.oe2203sp1.x86_64.rpm",
+                    "LibRaw-debugsource-0.20.2-6.oe2203sp1.x86_64.rpm",
+                    "LibRaw-0.20.2-6.oe2203sp1.x86_64.rpm"
+                ]
+            },
+            "database_specific": null
+        }
+    ],
+    "references": [
+        {
+            "type": "ADVISORY",
+            "url": "https://nvd.nist.gov/vuln/detail/CVE-2023-1729"
+        }
+    ],
+    "credits": null,
+    "database_specific": {
+        "severity": "Low"
+    }
+}

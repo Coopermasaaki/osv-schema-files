@@ -1,0 +1,69 @@
+{
+    "schema_version": "1.6.0",
+    "id": "OESA-2022-2094",
+    "modified": "2022-11-11T00:00:00Z",
+    "published": "2022-11-11T00:00:00Z",
+    "withdrawn": "",
+    "aliases": null,
+    "related": [
+        "CVE-2021-45444"
+    ],
+    "summary": "zsh security update",
+    "details": "The zsh is a shell designed for interactive use, and it is also a powerful scripting language. Many of the useful features of bash, ksh, and tcsh were incorporated into zsh. It can match files by file extension without running an external program, share command history with any shell, and more.\r\n\r\nSecurity Fix(es):\r\n\r\nIn zsh before 5.8.1, an attacker can achieve code execution if they control a command output inside the prompt, as demonstrated by a %F argument. This occurs because of recursive PROMPT_SUBST expansion.(CVE-2021-45444)",
+    "severity": null,
+    "affected": [
+        {
+            "package": {
+                "ecosystem": "openEuler-22.03-LTS",
+                "name": "zsh",
+                "purl": "pkg:rpm/zsh@5.8-3.oe2203"
+            },
+            "severity": null,
+            "ranges": [
+                {
+                    "type": "ECOSYSTEM",
+                    "repo": "",
+                    "events": [
+                        {
+                            "introduced": "0",
+                            "fixed": "5.8-3.oe2203",
+                            "last_affected": "",
+                            "limit": ""
+                        }
+                    ],
+                    "database_specific": null
+                }
+            ],
+            "versions": null,
+            "ecosystem_specific": {
+                "aarch64": [
+                    "zsh-5.8-3.oe2203.aarch64.rpm",
+                    "zsh-debugsource-5.8-3.oe2203.aarch64.rpm",
+                    "zsh-debuginfo-5.8-3.oe2203.aarch64.rpm"
+                ],
+                "noarch": [
+                    "zsh-help-5.8-3.oe2203.noarch.rpm"
+                ],
+                "src": [
+                    "zsh-5.8-3.oe2203.src.rpm"
+                ],
+                "x86_64": [
+                    "zsh-5.8-3.oe2203.x86_64.rpm",
+                    "zsh-debugsource-5.8-3.oe2203.x86_64.rpm",
+                    "zsh-debuginfo-5.8-3.oe2203.x86_64.rpm"
+                ]
+            },
+            "database_specific": null
+        }
+    ],
+    "references": [
+        {
+            "type": "ADVISORY",
+            "url": "https://nvd.nist.gov/vuln/detail/CVE-2021-45444"
+        }
+    ],
+    "credits": null,
+    "database_specific": {
+        "severity": "High"
+    }
+}

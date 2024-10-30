@@ -1,0 +1,124 @@
+{
+    "schema_version": "1.6.0",
+    "id": "OESA-2021-1340",
+    "modified": "2021-09-10T00:00:00Z",
+    "published": "2021-09-10T00:00:00Z",
+    "withdrawn": "",
+    "aliases": null,
+    "related": [
+        "CVE-2021-3621"
+    ],
+    "summary": "sssd security update",
+    "details": "SSSD provides a set of daemons to manage access to remote directories and authentication mechanisms such as LDAP, Kerberos or FreeIPA. It provides an NSS and PAM interface toward the system and a pluggable backend system to connect to multiple different account sources.\r\n\r\nSecurity Fix(es):\r\n\r\nA flaw was found in SSSD, where the sssctl command was vulnerable to shell command injection via the logs-fetch and cache-expire subcommands. This flaw allows an attacker to trick the root user into running a specially crafted sssctl command, such as via sudo, to gain root access. The highest threat from this vulnerability is to confidentiality, integrity, as well as system availability.(CVE-2021-3621)",
+    "severity": null,
+    "affected": [
+        {
+            "package": {
+                "ecosystem": "openEuler-20.03-LTS-SP1",
+                "name": "sssd",
+                "purl": "pkg:rpm/sssd@2.2.2-10.oe1"
+            },
+            "severity": null,
+            "ranges": [
+                {
+                    "type": "ECOSYSTEM",
+                    "repo": "",
+                    "events": [
+                        {
+                            "introduced": "0",
+                            "fixed": "2.2.2-10.oe1",
+                            "last_affected": "",
+                            "limit": ""
+                        }
+                    ],
+                    "database_specific": null
+                }
+            ],
+            "versions": null,
+            "ecosystem_specific": {
+                "aarch64": [
+                    "python2-sssd-2.2.2-10.oe1.aarch64.rpm",
+                    "python3-sssd-2.2.2-10.oe1.aarch64.rpm",
+                    "sssd-devel-2.2.2-10.oe1.aarch64.rpm",
+                    "sssd-debuginfo-2.2.2-10.oe1.aarch64.rpm",
+                    "sssd-debugsource-2.2.2-10.oe1.aarch64.rpm",
+                    "sssd-2.2.2-10.oe1.aarch64.rpm"
+                ],
+                "noarch": [
+                    "sssd-help-2.2.2-10.oe1.noarch.rpm"
+                ],
+                "src": [
+                    "sssd-2.2.2-10.oe1.src.rpm"
+                ],
+                "x86_64": [
+                    "python3-sssd-2.2.2-10.oe1.x86_64.rpm",
+                    "sssd-debugsource-2.2.2-10.oe1.x86_64.rpm",
+                    "sssd-debuginfo-2.2.2-10.oe1.x86_64.rpm",
+                    "python2-sssd-2.2.2-10.oe1.x86_64.rpm",
+                    "sssd-devel-2.2.2-10.oe1.x86_64.rpm",
+                    "sssd-2.2.2-10.oe1.x86_64.rpm"
+                ]
+            },
+            "database_specific": null
+        },
+        {
+            "package": {
+                "ecosystem": "openEuler-20.03-LTS-SP2",
+                "name": "sssd",
+                "purl": "pkg:rpm/sssd@2.2.2-10.oe1"
+            },
+            "severity": null,
+            "ranges": [
+                {
+                    "type": "ECOSYSTEM",
+                    "repo": "",
+                    "events": [
+                        {
+                            "introduced": "0",
+                            "fixed": "2.2.2-10.oe1",
+                            "last_affected": "",
+                            "limit": ""
+                        }
+                    ],
+                    "database_specific": null
+                }
+            ],
+            "versions": null,
+            "ecosystem_specific": {
+                "aarch64": [
+                    "python3-sssd-2.2.2-10.oe1.aarch64.rpm",
+                    "python2-sssd-2.2.2-10.oe1.aarch64.rpm",
+                    "sssd-2.2.2-10.oe1.aarch64.rpm",
+                    "sssd-debuginfo-2.2.2-10.oe1.aarch64.rpm",
+                    "sssd-devel-2.2.2-10.oe1.aarch64.rpm",
+                    "sssd-debugsource-2.2.2-10.oe1.aarch64.rpm"
+                ],
+                "noarch": [
+                    "sssd-help-2.2.2-10.oe1.noarch.rpm"
+                ],
+                "src": [
+                    "sssd-2.2.2-10.oe1.src.rpm"
+                ],
+                "x86_64": [
+                    "python3-sssd-2.2.2-10.oe1.x86_64.rpm",
+                    "python2-sssd-2.2.2-10.oe1.x86_64.rpm",
+                    "sssd-devel-2.2.2-10.oe1.x86_64.rpm",
+                    "sssd-debugsource-2.2.2-10.oe1.x86_64.rpm",
+                    "sssd-debuginfo-2.2.2-10.oe1.x86_64.rpm",
+                    "sssd-2.2.2-10.oe1.x86_64.rpm"
+                ]
+            },
+            "database_specific": null
+        }
+    ],
+    "references": [
+        {
+            "type": "ADVISORY",
+            "url": "https://nvd.nist.gov/vuln/detail/CVE-2021-3621"
+        }
+    ],
+    "credits": null,
+    "database_specific": {
+        "severity": "Medium"
+    }
+}

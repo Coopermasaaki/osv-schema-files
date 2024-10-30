@@ -1,0 +1,86 @@
+{
+    "schema_version": "1.6.0",
+    "id": "OESA-2024-1259",
+    "modified": "2024-03-08T00:00:00Z",
+    "published": "2024-03-08T00:00:00Z",
+    "withdrawn": "",
+    "aliases": null,
+    "related": [
+        "CVE-2024-1151"
+    ],
+    "summary": "kernel security update",
+    "details": "The Linux Kernel, the operating system core itself.\r\n\r\nSecurity Fix(es):\r\n\r\nA vulnerability was reported in the Open vSwitch sub-component in the Linux Kernel. The flaw occurs when a recursive operation of code push recursively calls into the code block. The OVS module does not validate the stack depth, pushing too many frames and causing a stack overflow. As a result, this can lead to a crash or other related issues.(CVE-2024-1151)",
+    "severity": null,
+    "affected": [
+        {
+            "package": {
+                "ecosystem": "openEuler-22.03-LTS-SP3",
+                "name": "kernel",
+                "purl": "pkg:rpm/kernel@5.10.0-190.0.0.103.oe2203sp3"
+            },
+            "severity": null,
+            "ranges": [
+                {
+                    "type": "ECOSYSTEM",
+                    "repo": "",
+                    "events": [
+                        {
+                            "introduced": "0",
+                            "fixed": "5.10.0-190.0.0.103.oe2203sp3",
+                            "last_affected": "",
+                            "limit": ""
+                        }
+                    ],
+                    "database_specific": null
+                }
+            ],
+            "versions": null,
+            "ecosystem_specific": {
+                "aarch64": [
+                    "kernel-source-5.10.0-190.0.0.103.oe2203sp3.aarch64.rpm",
+                    "kernel-debuginfo-5.10.0-190.0.0.103.oe2203sp3.aarch64.rpm",
+                    "kernel-devel-5.10.0-190.0.0.103.oe2203sp3.aarch64.rpm",
+                    "perf-debuginfo-5.10.0-190.0.0.103.oe2203sp3.aarch64.rpm",
+                    "kernel-headers-5.10.0-190.0.0.103.oe2203sp3.aarch64.rpm",
+                    "kernel-debugsource-5.10.0-190.0.0.103.oe2203sp3.aarch64.rpm",
+                    "kernel-5.10.0-190.0.0.103.oe2203sp3.aarch64.rpm",
+                    "perf-5.10.0-190.0.0.103.oe2203sp3.aarch64.rpm",
+                    "kernel-tools-5.10.0-190.0.0.103.oe2203sp3.aarch64.rpm",
+                    "kernel-tools-debuginfo-5.10.0-190.0.0.103.oe2203sp3.aarch64.rpm",
+                    "kernel-tools-devel-5.10.0-190.0.0.103.oe2203sp3.aarch64.rpm",
+                    "python3-perf-5.10.0-190.0.0.103.oe2203sp3.aarch64.rpm",
+                    "python3-perf-debuginfo-5.10.0-190.0.0.103.oe2203sp3.aarch64.rpm"
+                ],
+                "src": [
+                    "kernel-5.10.0-190.0.0.103.oe2203sp3.src.rpm"
+                ],
+                "x86_64": [
+                    "kernel-5.10.0-190.0.0.103.oe2203sp3.x86_64.rpm",
+                    "python3-perf-debuginfo-5.10.0-190.0.0.103.oe2203sp3.x86_64.rpm",
+                    "kernel-tools-debuginfo-5.10.0-190.0.0.103.oe2203sp3.x86_64.rpm",
+                    "kernel-devel-5.10.0-190.0.0.103.oe2203sp3.x86_64.rpm",
+                    "kernel-tools-devel-5.10.0-190.0.0.103.oe2203sp3.x86_64.rpm",
+                    "perf-debuginfo-5.10.0-190.0.0.103.oe2203sp3.x86_64.rpm",
+                    "kernel-source-5.10.0-190.0.0.103.oe2203sp3.x86_64.rpm",
+                    "kernel-debugsource-5.10.0-190.0.0.103.oe2203sp3.x86_64.rpm",
+                    "kernel-headers-5.10.0-190.0.0.103.oe2203sp3.x86_64.rpm",
+                    "kernel-debuginfo-5.10.0-190.0.0.103.oe2203sp3.x86_64.rpm",
+                    "perf-5.10.0-190.0.0.103.oe2203sp3.x86_64.rpm",
+                    "kernel-tools-5.10.0-190.0.0.103.oe2203sp3.x86_64.rpm",
+                    "python3-perf-5.10.0-190.0.0.103.oe2203sp3.x86_64.rpm"
+                ]
+            },
+            "database_specific": null
+        }
+    ],
+    "references": [
+        {
+            "type": "ADVISORY",
+            "url": "https://nvd.nist.gov/vuln/detail/CVE-2024-1151"
+        }
+    ],
+    "credits": null,
+    "database_specific": {
+        "severity": "Medium"
+    }
+}

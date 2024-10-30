@@ -1,0 +1,164 @@
+{
+    "schema_version": "1.6.0",
+    "id": "OESA-2023-1136",
+    "modified": "2023-03-04T00:00:00Z",
+    "published": "2023-03-04T00:00:00Z",
+    "withdrawn": "",
+    "aliases": null,
+    "related": [
+        "CVE-2023-24580"
+    ],
+    "summary": "python-django security update",
+    "details": "A high-level Python Web framework that encourages rapid development and clean, pragmatic design.\r\n\r\nSecurity Fix(es):\r\n\r\nAn issue was discovered in the Multipart Request Parser in Django 3.2 before 3.2.18, 4.0 before 4.0.10, and 4.1 before 4.1.7. Passing certain inputs (e.g., an excessive number of parts) to multipart forms could result in too many open files or memory exhaustion, and provided a potential vector for a denial-of-service attack.(CVE-2023-24580)",
+    "severity": null,
+    "affected": [
+        {
+            "package": {
+                "ecosystem": "openEuler-20.03-LTS-SP1",
+                "name": "python-django",
+                "purl": "pkg:rpm/python-django@2.2.27-4.oe1"
+            },
+            "severity": null,
+            "ranges": [
+                {
+                    "type": "ECOSYSTEM",
+                    "repo": "",
+                    "events": [
+                        {
+                            "introduced": "0",
+                            "fixed": "2.2.27-4.oe1",
+                            "last_affected": "",
+                            "limit": ""
+                        }
+                    ],
+                    "database_specific": null
+                }
+            ],
+            "versions": null,
+            "ecosystem_specific": {
+                "noarch": [
+                    "python-django-help-2.2.27-4.oe1.noarch.rpm",
+                    "python3-Django-2.2.27-4.oe1.noarch.rpm"
+                ],
+                "src": [
+                    "python-django-2.2.27-4.oe1.src.rpm"
+                ]
+            },
+            "database_specific": null
+        },
+        {
+            "package": {
+                "ecosystem": "openEuler-20.03-LTS-SP3",
+                "name": "python-django",
+                "purl": "pkg:rpm/python-django@2.2.27-4.oe1"
+            },
+            "severity": null,
+            "ranges": [
+                {
+                    "type": "ECOSYSTEM",
+                    "repo": "",
+                    "events": [
+                        {
+                            "introduced": "0",
+                            "fixed": "2.2.27-4.oe1",
+                            "last_affected": "",
+                            "limit": ""
+                        }
+                    ],
+                    "database_specific": null
+                }
+            ],
+            "versions": null,
+            "ecosystem_specific": {
+                "noarch": [
+                    "python3-Django-2.2.27-4.oe1.noarch.rpm",
+                    "python-django-help-2.2.27-4.oe1.noarch.rpm"
+                ],
+                "src": [
+                    "python-django-2.2.27-4.oe1.src.rpm"
+                ]
+            },
+            "database_specific": null
+        },
+        {
+            "package": {
+                "ecosystem": "openEuler-22.03-LTS",
+                "name": "python-django",
+                "purl": "pkg:rpm/python-django@2.2.27-4.oe2203"
+            },
+            "severity": null,
+            "ranges": [
+                {
+                    "type": "ECOSYSTEM",
+                    "repo": "",
+                    "events": [
+                        {
+                            "introduced": "0",
+                            "fixed": "2.2.27-4.oe2203",
+                            "last_affected": "",
+                            "limit": ""
+                        }
+                    ],
+                    "database_specific": null
+                }
+            ],
+            "versions": null,
+            "ecosystem_specific": {
+                "noarch": [
+                    "python-django-help-2.2.27-4.oe2203.noarch.rpm",
+                    "python3-Django-2.2.27-4.oe2203.noarch.rpm",
+                    "python-django-help-3.2.12-3.oe2203sp1.noarch.rpm",
+                    "python3-Django-3.2.12-3.oe2203sp1.noarch.rpm"
+                ],
+                "src": [
+                    "python-django-2.2.27-4.oe2203.src.rpm"
+                ]
+            },
+            "database_specific": null
+        },
+        {
+            "package": {
+                "ecosystem": "openEuler-22.03-LTS-SP1",
+                "name": "python-django",
+                "purl": "pkg:rpm/python-django@3.2.12-3.oe2203sp1"
+            },
+            "severity": null,
+            "ranges": [
+                {
+                    "type": "ECOSYSTEM",
+                    "repo": "",
+                    "events": [
+                        {
+                            "introduced": "0",
+                            "fixed": "3.2.12-3.oe2203sp1",
+                            "last_affected": "",
+                            "limit": ""
+                        }
+                    ],
+                    "database_specific": null
+                }
+            ],
+            "versions": null,
+            "ecosystem_specific": {
+                "noarch": [
+                    "python-django-help-3.2.12-3.oe2203sp1.noarch.rpm",
+                    "python3-Django-3.2.12-3.oe2203sp1.noarch.rpm"
+                ],
+                "src": [
+                    "python-django-3.2.12-3.oe2203sp1.src.rpm"
+                ]
+            },
+            "database_specific": null
+        }
+    ],
+    "references": [
+        {
+            "type": "ADVISORY",
+            "url": "https://nvd.nist.gov/vuln/detail/CVE-2023-24580"
+        }
+    ],
+    "credits": null,
+    "database_specific": {
+        "severity": "High"
+    }
+}

@@ -1,0 +1,59 @@
+{
+    "schema_version": "1.6.0",
+    "id": "OESA-2023-1504",
+    "modified": "2023-08-12T00:00:00Z",
+    "published": "2023-08-12T00:00:00Z",
+    "withdrawn": "",
+    "aliases": null,
+    "related": [
+        "CVE-2023-33201"
+    ],
+    "summary": "bouncycastle security update",
+    "details": "The package is organised so that it contains a light-weight API suitable for use in any environment (including the newly released J2ME) with the additional infrastructure to conform the algorithms to the JCE framework.\r\n\r\nSecurity Fix(es):\r\n\r\nBouncy Castle For Java before 1.74 is affected by an LDAP injection vulnerability. The vulnerability only affects applications that use an LDAP CertStore from Bouncy Castle to validate X.509 certificates. During the certificate validation process, Bouncy Castle inserts the certificate\u0026apos;s Subject Name into an LDAP search filter without any escaping, which leads to an LDAP injection vulnerability.(CVE-2023-33201)",
+    "severity": null,
+    "affected": [
+        {
+            "package": {
+                "ecosystem": "openEuler-22.03-LTS-SP2",
+                "name": "bouncycastle",
+                "purl": "pkg:rpm/bouncycastle@1.67-2.oe2203sp2"
+            },
+            "severity": null,
+            "ranges": [
+                {
+                    "type": "ECOSYSTEM",
+                    "repo": "",
+                    "events": [
+                        {
+                            "introduced": "0",
+                            "fixed": "1.67-2.oe2203sp2",
+                            "last_affected": "",
+                            "limit": ""
+                        }
+                    ],
+                    "database_specific": null
+                }
+            ],
+            "versions": null,
+            "ecosystem_specific": {
+                "noarch": [
+                    "bouncycastle-1.67-2.oe2203sp2.noarch.rpm"
+                ],
+                "src": [
+                    "bouncycastle-1.67-2.oe2203sp2.src.rpm"
+                ]
+            },
+            "database_specific": null
+        }
+    ],
+    "references": [
+        {
+            "type": "ADVISORY",
+            "url": "https://nvd.nist.gov/vuln/detail/CVE-2023-33201"
+        }
+    ],
+    "credits": null,
+    "database_specific": {
+        "severity": "Low"
+    }
+}

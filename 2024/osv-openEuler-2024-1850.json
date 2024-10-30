@@ -1,0 +1,64 @@
+{
+    "schema_version": "1.6.0",
+    "id": "OESA-2024-1850",
+    "modified": "2024-07-19T00:00:00Z",
+    "published": "2024-07-19T00:00:00Z",
+    "withdrawn": "",
+    "aliases": null,
+    "related": [
+        "CVE-2024-6563",
+        "CVE-2024-6564"
+    ],
+    "summary": "arm-trusted-firmware security update",
+    "details": "Trusted Firmware-A is a reference implementation of secure world software for Arm A-Profile architectures (Armv8-A and Armv7-A), including an Exception Level 3 (EL3) Secure Monitor.\r\n\r\nSecurity Fix(es):\r\n\r\nBuffer Copy without Checking Size of Input (\u0026apos;Classic Buffer Overflow\u0026apos;) vulnerability in Renesas arm-trusted-firmware allows Local Execution of Code. This vulnerability is associated with program files  https://github.Com/renesas-rcar/arm-trusted-firmware/blob/rcar_gen3_v2.5/drivers/renesas/common/io/i... https://github.Com/renesas-rcar/arm-trusted-firmware/blob/rcar_gen3_v2.5/drivers/renesas/common/io/io_rcar.C .\r\n\r\n\r\n\r\n\nIn line 313 \u0026quot;addr_loaded_cnt\u0026quot; is checked not to be \u0026quot;CHECK_IMAGE_AREA_CNT\u0026quot; (5) or larger, this check does not halt the function. Immediately after (line 317) there will be an overflow in the buffer and the value of \u0026quot;dst\u0026quot; will be written to the area immediately after the buffer, which is \u0026quot;addr_loaded_cnt\u0026quot;. This will allow an attacker to freely control the value of \u0026quot;addr_loaded_cnt\u0026quot; and thus control the destination of the write immediately after (line 318). The write in line 318 will then be fully controlled by said attacker, with whichever address and whichever value (\u0026quot;len\u0026quot;) they desire.(CVE-2024-6563)\r\n\r\nBuffer overflow in \u0026quot;rcar_dev_init\u0026quot;  due to using due to using untrusted data (rcar_image_number) as a loop counter before verifying it against RCAR_MAX_BL3X_IMAGE. This could lead to a full bypass of secure boot.(CVE-2024-6564)",
+    "severity": null,
+    "affected": [
+        {
+            "package": {
+                "ecosystem": "openEuler-22.03-LTS-SP3",
+                "name": "arm-trusted-firmware",
+                "purl": "pkg:rpm/arm-trusted-firmware@2.3-5.oe2203sp3"
+            },
+            "severity": null,
+            "ranges": [
+                {
+                    "type": "ECOSYSTEM",
+                    "repo": "",
+                    "events": [
+                        {
+                            "introduced": "0",
+                            "fixed": "2.3-5.oe2203sp3",
+                            "last_affected": "",
+                            "limit": ""
+                        }
+                    ],
+                    "database_specific": null
+                }
+            ],
+            "versions": null,
+            "ecosystem_specific": {
+                "aarch64": [
+                    "arm-trusted-firmware-armv8-2.3-5.oe2203sp3.aarch64.rpm"
+                ],
+                "src": [
+                    "arm-trusted-firmware-2.3-5.oe2203sp3.src.rpm"
+                ]
+            },
+            "database_specific": null
+        }
+    ],
+    "references": [
+        {
+            "type": "ADVISORY",
+            "url": "https://nvd.nist.gov/vuln/detail/CVE-2024-6563"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://nvd.nist.gov/vuln/detail/CVE-2024-6564"
+        }
+    ],
+    "credits": null,
+    "database_specific": {
+        "severity": "Medium"
+    }
+}

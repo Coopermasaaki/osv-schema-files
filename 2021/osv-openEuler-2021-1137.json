@@ -1,0 +1,70 @@
+{
+    "schema_version": "1.6.0",
+    "id": "OESA-2021-1137",
+    "modified": "2021-04-07T00:00:00Z",
+    "published": "2021-04-07T00:00:00Z",
+    "withdrawn": "",
+    "aliases": null,
+    "related": [
+        "CVE-2019-14900"
+    ],
+    "summary": "hibernate4 security update",
+    "details": "Hibernate is a powerful, ultra-high performance object/relational persistence and query service for Java. Hibernate lets you develop persistent objects following common Java idiom - including association, inheritance, polymorphism, composition and the Java collections framework. Extremely fine-grained, richly typed object models are possible. The Hibernate Query Language, designed as a \u0026quot;minimal\u0026quot; object-oriented extension to SQL, provides an elegant bridge between the object and relational worlds. Hibernate is now the most popular ORM solution for Java.\r\n\r\nSecurity Fix(es):\r\n\r\nA flaw was found in Hibernate ORM in versions before 5.3.18, 5.4.18 and 5.5.0.Beta1. A SQL injection in the implementation of the JPA Criteria API can permit unsanitized literals when a literal is used in the SELECT or GROUP BY parts of the query. This flaw could allow an attacker to access unauthorized information or possibly conduct further attacks.(CVE-2019-14900)",
+    "severity": null,
+    "affected": [
+        {
+            "package": {
+                "ecosystem": "openEuler-20.03-LTS-SP1",
+                "name": "hibernate4",
+                "purl": "pkg:rpm/hibernate4@4.3.11-3.oe1"
+            },
+            "severity": null,
+            "ranges": [
+                {
+                    "type": "ECOSYSTEM",
+                    "repo": "",
+                    "events": [
+                        {
+                            "introduced": "0",
+                            "fixed": "4.3.11-3.oe1",
+                            "last_affected": "",
+                            "limit": ""
+                        }
+                    ],
+                    "database_specific": null
+                }
+            ],
+            "versions": null,
+            "ecosystem_specific": {
+                "noarch": [
+                    "hibernate4-osgi-4.3.11-3.oe1.noarch.rpm",
+                    "hibernate4-javadoc-4.3.11-3.oe1.noarch.rpm",
+                    "hibernate4-testing-4.3.11-3.oe1.noarch.rpm",
+                    "hibernate4-core-4.3.11-3.oe1.noarch.rpm",
+                    "hibernate4-hikaricp-4.3.11-3.oe1.noarch.rpm",
+                    "hibernate4-proxool-4.3.11-3.oe1.noarch.rpm",
+                    "hibernate4-ehcache-4.3.11-3.oe1.noarch.rpm",
+                    "hibernate4-parent-4.3.11-3.oe1.noarch.rpm",
+                    "hibernate4-infinispan-4.3.11-3.oe1.noarch.rpm",
+                    "hibernate4-envers-4.3.11-3.oe1.noarch.rpm",
+                    "hibernate4-entitymanager-4.3.11-3.oe1.noarch.rpm",
+                    "hibernate4-c3p0-4.3.11-3.oe1.noarch.rpm"
+                ],
+                "src": [
+                    "hibernate4-4.3.11-3.oe1.src.rpm"
+                ]
+            },
+            "database_specific": null
+        }
+    ],
+    "references": [
+        {
+            "type": "ADVISORY",
+            "url": "https://nvd.nist.gov/vuln/detail/CVE-2019-14900"
+        }
+    ],
+    "credits": null,
+    "database_specific": {
+        "severity": "Medium"
+    }
+}

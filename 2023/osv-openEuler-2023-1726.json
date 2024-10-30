@@ -1,0 +1,70 @@
+{
+    "schema_version": "1.6.0",
+    "id": "OESA-2023-1726",
+    "modified": "2023-10-13T00:00:00Z",
+    "published": "2023-10-13T00:00:00Z",
+    "withdrawn": "",
+    "aliases": null,
+    "related": [
+        "CVE-2023-4785"
+    ],
+    "summary": "grpc security update",
+    "details": "gRPC is a modern open source high performance RPC framework that can run in any environment. It can efficiently connect services in and across data centers with pluggable support for load balancing, tracing, health checking and authentication. It is also applicable in last mile of distributed computing to connect devices, mobile applications and browsers to backend services.\r\n\r\nSecurity Fix(es):\r\n\r\nLack of error handling in the TCP server in Google\u0026apos;s gRPC starting version 1.23 on posix-compatible platforms (ex. Linux) allows an attacker to cause a denial of service by initiating a significant number of connections with the server. Note that gRPC C++ Python, and Ruby are affected, but gRPC Java, and Go are NOT affected. (CVE-2023-4785)",
+    "severity": null,
+    "affected": [
+        {
+            "package": {
+                "ecosystem": "openEuler-20.03-LTS-SP1",
+                "name": "grpc",
+                "purl": "pkg:rpm/grpc@1.31.0-5.oe1"
+            },
+            "severity": null,
+            "ranges": [
+                {
+                    "type": "ECOSYSTEM",
+                    "repo": "",
+                    "events": [
+                        {
+                            "introduced": "0",
+                            "fixed": "1.31.0-5.oe1",
+                            "last_affected": "",
+                            "limit": ""
+                        }
+                    ],
+                    "database_specific": null
+                }
+            ],
+            "versions": null,
+            "ecosystem_specific": {
+                "aarch64": [
+                    "python3-grpcio-1.31.0-5.oe1.aarch64.rpm",
+                    "grpc-devel-1.31.0-5.oe1.aarch64.rpm",
+                    "grpc-debuginfo-1.31.0-5.oe1.aarch64.rpm",
+                    "grpc-1.31.0-5.oe1.aarch64.rpm",
+                    "grpc-debugsource-1.31.0-5.oe1.aarch64.rpm"
+                ],
+                "src": [
+                    "grpc-1.31.0-5.oe1.src.rpm"
+                ],
+                "x86_64": [
+                    "grpc-1.31.0-5.oe1.x86_64.rpm",
+                    "python3-grpcio-1.31.0-5.oe1.x86_64.rpm",
+                    "grpc-debuginfo-1.31.0-5.oe1.x86_64.rpm",
+                    "grpc-debugsource-1.31.0-5.oe1.x86_64.rpm",
+                    "grpc-devel-1.31.0-5.oe1.x86_64.rpm"
+                ]
+            },
+            "database_specific": null
+        }
+    ],
+    "references": [
+        {
+            "type": "ADVISORY",
+            "url": "https://nvd.nist.gov/vuln/detail/CVE-2023-4785"
+        }
+    ],
+    "credits": null,
+    "database_specific": {
+        "severity": "High"
+    }
+}

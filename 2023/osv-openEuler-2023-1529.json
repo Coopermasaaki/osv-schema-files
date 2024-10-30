@@ -1,0 +1,205 @@
+{
+    "schema_version": "1.6.0",
+    "id": "OESA-2023-1529",
+    "modified": "2023-08-26T00:00:00Z",
+    "published": "2023-08-26T00:00:00Z",
+    "withdrawn": "",
+    "aliases": null,
+    "related": [
+        "CVE-2022-24439",
+        "CVE-2023-40267"
+    ],
+    "summary": "python-GitPython security update",
+    "details": "GitPython is a python library used to interact with git repositories, high-level like git-porcelain, or low-level like git-plumbing.\n\nSecurity Fix(es):\n\nAll versions of package gitpython are vulnerable to Remote Code Execution (RCE) due to improper user input validation, which makes it possible to inject a maliciously crafted remote URL into the clone command. Exploiting this vulnerability is possible because the library makes external calls to git without sufficient sanitization of input arguments.(CVE-2022-24439)\n\nGitPython before 3.1.32 does not block insecure non-multi options in clone and clone_from. NOTE: this issue exists because of an incomplete fix for CVE-2022-24439.(CVE-2023-40267)",
+    "severity": null,
+    "affected": [
+        {
+            "package": {
+                "ecosystem": "openEuler-20.03-LTS-SP1",
+                "name": "python-GitPython",
+                "purl": "pkg:rpm/python-GitPython@3.1.32-1.oe1"
+            },
+            "severity": null,
+            "ranges": [
+                {
+                    "type": "ECOSYSTEM",
+                    "repo": "",
+                    "events": [
+                        {
+                            "introduced": "0",
+                            "fixed": "3.1.32-1.oe1",
+                            "last_affected": "",
+                            "limit": ""
+                        }
+                    ],
+                    "database_specific": null
+                }
+            ],
+            "versions": null,
+            "ecosystem_specific": {
+                "noarch": [
+                    "python-GitPython-help-3.1.32-1.oe1.noarch.rpm",
+                    "python3-GitPython-3.1.32-1.oe1.noarch.rpm"
+                ],
+                "src": [
+                    "python-GitPython-3.1.32-1.oe1.src.rpm"
+                ]
+            },
+            "database_specific": null
+        },
+        {
+            "package": {
+                "ecosystem": "openEuler-20.03-LTS-SP3",
+                "name": "python-GitPython",
+                "purl": "pkg:rpm/python-GitPython@3.1.32-1.oe1"
+            },
+            "severity": null,
+            "ranges": [
+                {
+                    "type": "ECOSYSTEM",
+                    "repo": "",
+                    "events": [
+                        {
+                            "introduced": "0",
+                            "fixed": "3.1.32-1.oe1",
+                            "last_affected": "",
+                            "limit": ""
+                        }
+                    ],
+                    "database_specific": null
+                }
+            ],
+            "versions": null,
+            "ecosystem_specific": {
+                "noarch": [
+                    "python-GitPython-help-3.1.32-1.oe1.noarch.rpm",
+                    "python3-GitPython-3.1.32-1.oe1.noarch.rpm"
+                ],
+                "src": [
+                    "python-GitPython-3.1.32-1.oe1.src.rpm"
+                ]
+            },
+            "database_specific": null
+        },
+        {
+            "package": {
+                "ecosystem": "openEuler-22.03-LTS",
+                "name": "python-GitPython",
+                "purl": "pkg:rpm/python-GitPython@3.1.32-1.oe2203"
+            },
+            "severity": null,
+            "ranges": [
+                {
+                    "type": "ECOSYSTEM",
+                    "repo": "",
+                    "events": [
+                        {
+                            "introduced": "0",
+                            "fixed": "3.1.32-1.oe2203",
+                            "last_affected": "",
+                            "limit": ""
+                        }
+                    ],
+                    "database_specific": null
+                }
+            ],
+            "versions": null,
+            "ecosystem_specific": {
+                "noarch": [
+                    "python3-GitPython-3.1.32-1.oe2203.noarch.rpm",
+                    "python-GitPython-help-3.1.32-1.oe2203.noarch.rpm",
+                    "python-GitPython-help-3.1.32-1.oe2203sp1.noarch.rpm",
+                    "python3-GitPython-3.1.32-1.oe2203sp1.noarch.rpm",
+                    "python-GitPython-help-3.1.32-1.oe2203sp2.noarch.rpm",
+                    "python3-GitPython-3.1.32-1.oe2203sp2.noarch.rpm"
+                ],
+                "src": [
+                    "python-GitPython-3.1.32-1.oe2203.src.rpm"
+                ]
+            },
+            "database_specific": null
+        },
+        {
+            "package": {
+                "ecosystem": "openEuler-22.03-LTS-SP1",
+                "name": "python-GitPython",
+                "purl": "pkg:rpm/python-GitPython@3.1.32-1.oe2203sp1"
+            },
+            "severity": null,
+            "ranges": [
+                {
+                    "type": "ECOSYSTEM",
+                    "repo": "",
+                    "events": [
+                        {
+                            "introduced": "0",
+                            "fixed": "3.1.32-1.oe2203sp1",
+                            "last_affected": "",
+                            "limit": ""
+                        }
+                    ],
+                    "database_specific": null
+                }
+            ],
+            "versions": null,
+            "ecosystem_specific": {
+                "noarch": [
+                    "python-GitPython-help-3.1.32-1.oe2203sp1.noarch.rpm",
+                    "python3-GitPython-3.1.32-1.oe2203sp1.noarch.rpm"
+                ],
+                "src": [
+                    "python-GitPython-3.1.32-1.oe2203sp1.src.rpm"
+                ]
+            },
+            "database_specific": null
+        },
+        {
+            "package": {
+                "ecosystem": "openEuler-22.03-LTS-SP2",
+                "name": "python-GitPython",
+                "purl": "pkg:rpm/python-GitPython@3.1.32-1.oe2203sp2"
+            },
+            "severity": null,
+            "ranges": [
+                {
+                    "type": "ECOSYSTEM",
+                    "repo": "",
+                    "events": [
+                        {
+                            "introduced": "0",
+                            "fixed": "3.1.32-1.oe2203sp2",
+                            "last_affected": "",
+                            "limit": ""
+                        }
+                    ],
+                    "database_specific": null
+                }
+            ],
+            "versions": null,
+            "ecosystem_specific": {
+                "noarch": [
+                    "python-GitPython-help-3.1.32-1.oe2203sp2.noarch.rpm",
+                    "python3-GitPython-3.1.32-1.oe2203sp2.noarch.rpm"
+                ],
+                "src": [
+                    "python-GitPython-3.1.32-1.oe2203sp2.src.rpm"
+                ]
+            },
+            "database_specific": null
+        }
+    ],
+    "references": [
+        {
+            "type": "ADVISORY",
+            "url": "https://nvd.nist.gov/vuln/detail/CVE-2022-24439"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://nvd.nist.gov/vuln/detail/CVE-2023-40267"
+        }
+    ],
+    "credits": null,
+    "database_specific": {
+        "severity": "Critical"
+    }
+}

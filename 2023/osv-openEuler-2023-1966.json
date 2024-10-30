@@ -1,0 +1,60 @@
+{
+    "schema_version": "1.6.0",
+    "id": "OESA-2023-1966",
+    "modified": "2023-12-22T00:00:00Z",
+    "published": "2023-12-22T00:00:00Z",
+    "withdrawn": "",
+    "aliases": null,
+    "related": [
+        "CVE-2023-1436"
+    ],
+    "summary": "jettison security update",
+    "details": "Jettison is a collection of Java APIs (like STaX and DOM) which read and write JSON. This allows nearly transparent enablement of JSON based web services in services frameworks like CXF or XML serialization frameworks like XStream.\r\n\r\nSecurity Fix(es):\r\n\r\nAn infinite recursion is triggered in Jettison when constructing a JSONArray from a Collection that contains a self-reference in one of its elements. This leads to a StackOverflowError exception being thrown.\r\n\r\n(CVE-2023-1436)",
+    "severity": null,
+    "affected": [
+        {
+            "package": {
+                "ecosystem": "openEuler-22.03-LTS",
+                "name": "jettison",
+                "purl": "pkg:rpm/jettison@1.5.4-1.oe2203"
+            },
+            "severity": null,
+            "ranges": [
+                {
+                    "type": "ECOSYSTEM",
+                    "repo": "",
+                    "events": [
+                        {
+                            "introduced": "0",
+                            "fixed": "1.5.4-1.oe2203",
+                            "last_affected": "",
+                            "limit": ""
+                        }
+                    ],
+                    "database_specific": null
+                }
+            ],
+            "versions": null,
+            "ecosystem_specific": {
+                "noarch": [
+                    "jettison-javadoc-1.5.4-1.oe2203.noarch.rpm",
+                    "jettison-1.5.4-1.oe2203.noarch.rpm"
+                ],
+                "src": [
+                    "jettison-1.5.4-1.oe2203.src.rpm"
+                ]
+            },
+            "database_specific": null
+        }
+    ],
+    "references": [
+        {
+            "type": "ADVISORY",
+            "url": "https://nvd.nist.gov/vuln/detail/CVE-2023-1436"
+        }
+    ],
+    "credits": null,
+    "database_specific": {
+        "severity": "High"
+    }
+}

@@ -1,0 +1,245 @@
+{
+    "schema_version": "1.6.0",
+    "id": "OESA-2024-1237",
+    "modified": "2024-03-01T00:00:00Z",
+    "published": "2024-03-01T00:00:00Z",
+    "withdrawn": "",
+    "aliases": null,
+    "related": [
+        "CVE-2024-1597"
+    ],
+    "summary": "postgresql-jdbc security update",
+    "details": "PostgreSQL JDBC Driver (PgJDBC for short) allows Java programs to connect to a PostgreSQL database using standard, database independent Java code. Is an open source JDBC driver written in Pure Java (Type 4), and communicates in the PostgreSQL native network protocol.\r\n\r\nSecurity Fix(es):\r\n\r\npgjdbc, the PostgreSQL JDBC Driver, allows attacker to inject SQL if using PreferQueryMode=SIMPLE. Note this is not the default. In the default mode there is no vulnerability. A placeholder for a numeric value must be immediately preceded by a minus. There must be a second placeholder for a string value after the first placeholder; both must be on the same line. By constructing a matching string payload, the attacker can inject SQL to alter the query,bypassing the protections that parameterized queries bring against SQL Injection attacks. Versions before 42.7.2, 42.6.1, 42.5.5, 42.4.4, 42.3.9, and 42.2.8 are affected.(CVE-2024-1597)",
+    "severity": null,
+    "affected": [
+        {
+            "package": {
+                "ecosystem": "openEuler-20.03-LTS-SP1",
+                "name": "postgresql-jdbc",
+                "purl": "pkg:rpm/postgresql-jdbc@42.4.1-3.oe1"
+            },
+            "severity": null,
+            "ranges": [
+                {
+                    "type": "ECOSYSTEM",
+                    "repo": "",
+                    "events": [
+                        {
+                            "introduced": "0",
+                            "fixed": "42.4.1-3.oe1",
+                            "last_affected": "",
+                            "limit": ""
+                        }
+                    ],
+                    "database_specific": null
+                }
+            ],
+            "versions": null,
+            "ecosystem_specific": {
+                "noarch": [
+                    "postgresql-jdbc-help-42.4.1-3.oe1.noarch.rpm",
+                    "postgresql-jdbc-42.4.1-3.oe1.noarch.rpm",
+                    "postgresql-jdbc-javadoc-42.4.1-3.oe1.noarch.rpm"
+                ],
+                "src": [
+                    "postgresql-jdbc-42.4.1-3.oe1.src.rpm"
+                ]
+            },
+            "database_specific": null
+        },
+        {
+            "package": {
+                "ecosystem": "openEuler-20.03-LTS-SP4",
+                "name": "postgresql-jdbc",
+                "purl": "pkg:rpm/postgresql-jdbc@42.4.1-3.oe2003sp4"
+            },
+            "severity": null,
+            "ranges": [
+                {
+                    "type": "ECOSYSTEM",
+                    "repo": "",
+                    "events": [
+                        {
+                            "introduced": "0",
+                            "fixed": "42.4.1-3.oe2003sp4",
+                            "last_affected": "",
+                            "limit": ""
+                        }
+                    ],
+                    "database_specific": null
+                }
+            ],
+            "versions": null,
+            "ecosystem_specific": {
+                "noarch": [
+                    "postgresql-jdbc-help-42.4.1-3.oe2003sp4.noarch.rpm",
+                    "postgresql-jdbc-javadoc-42.4.1-3.oe2003sp4.noarch.rpm",
+                    "postgresql-jdbc-42.4.1-3.oe2003sp4.noarch.rpm"
+                ],
+                "src": [
+                    "postgresql-jdbc-42.4.1-3.oe2003sp4.src.rpm"
+                ]
+            },
+            "database_specific": null
+        },
+        {
+            "package": {
+                "ecosystem": "openEuler-22.03-LTS",
+                "name": "postgresql-jdbc",
+                "purl": "pkg:rpm/postgresql-jdbc@42.4.1-3.oe2203"
+            },
+            "severity": null,
+            "ranges": [
+                {
+                    "type": "ECOSYSTEM",
+                    "repo": "",
+                    "events": [
+                        {
+                            "introduced": "0",
+                            "fixed": "42.4.1-3.oe2203",
+                            "last_affected": "",
+                            "limit": ""
+                        }
+                    ],
+                    "database_specific": null
+                }
+            ],
+            "versions": null,
+            "ecosystem_specific": {
+                "noarch": [
+                    "postgresql-jdbc-javadoc-42.4.1-3.oe2203.noarch.rpm",
+                    "postgresql-jdbc-42.4.1-3.oe2203.noarch.rpm",
+                    "postgresql-jdbc-help-42.4.1-3.oe2203.noarch.rpm",
+                    "postgresql-jdbc-help-42.4.1-3.oe2203sp1.noarch.rpm",
+                    "postgresql-jdbc-42.4.1-3.oe2203sp1.noarch.rpm",
+                    "postgresql-jdbc-javadoc-42.4.1-3.oe2203sp1.noarch.rpm",
+                    "postgresql-jdbc-help-42.4.1-3.oe2203sp2.noarch.rpm",
+                    "postgresql-jdbc-42.4.1-3.oe2203sp2.noarch.rpm",
+                    "postgresql-jdbc-javadoc-42.4.1-3.oe2203sp2.noarch.rpm",
+                    "postgresql-jdbc-javadoc-42.4.1-3.oe2203sp3.noarch.rpm",
+                    "postgresql-jdbc-42.4.1-3.oe2203sp3.noarch.rpm",
+                    "postgresql-jdbc-help-42.4.1-3.oe2203sp3.noarch.rpm"
+                ],
+                "src": [
+                    "postgresql-jdbc-42.4.1-3.oe2203.src.rpm"
+                ]
+            },
+            "database_specific": null
+        },
+        {
+            "package": {
+                "ecosystem": "openEuler-22.03-LTS-SP1",
+                "name": "postgresql-jdbc",
+                "purl": "pkg:rpm/postgresql-jdbc@42.4.1-3.oe2203sp1"
+            },
+            "severity": null,
+            "ranges": [
+                {
+                    "type": "ECOSYSTEM",
+                    "repo": "",
+                    "events": [
+                        {
+                            "introduced": "0",
+                            "fixed": "42.4.1-3.oe2203sp1",
+                            "last_affected": "",
+                            "limit": ""
+                        }
+                    ],
+                    "database_specific": null
+                }
+            ],
+            "versions": null,
+            "ecosystem_specific": {
+                "noarch": [
+                    "postgresql-jdbc-help-42.4.1-3.oe2203sp1.noarch.rpm",
+                    "postgresql-jdbc-42.4.1-3.oe2203sp1.noarch.rpm",
+                    "postgresql-jdbc-javadoc-42.4.1-3.oe2203sp1.noarch.rpm"
+                ],
+                "src": [
+                    "postgresql-jdbc-42.4.1-3.oe2203sp1.src.rpm"
+                ]
+            },
+            "database_specific": null
+        },
+        {
+            "package": {
+                "ecosystem": "openEuler-22.03-LTS-SP2",
+                "name": "postgresql-jdbc",
+                "purl": "pkg:rpm/postgresql-jdbc@42.4.1-3.oe2203sp2"
+            },
+            "severity": null,
+            "ranges": [
+                {
+                    "type": "ECOSYSTEM",
+                    "repo": "",
+                    "events": [
+                        {
+                            "introduced": "0",
+                            "fixed": "42.4.1-3.oe2203sp2",
+                            "last_affected": "",
+                            "limit": ""
+                        }
+                    ],
+                    "database_specific": null
+                }
+            ],
+            "versions": null,
+            "ecosystem_specific": {
+                "noarch": [
+                    "postgresql-jdbc-help-42.4.1-3.oe2203sp2.noarch.rpm",
+                    "postgresql-jdbc-42.4.1-3.oe2203sp2.noarch.rpm",
+                    "postgresql-jdbc-javadoc-42.4.1-3.oe2203sp2.noarch.rpm"
+                ],
+                "src": [
+                    "postgresql-jdbc-42.4.1-3.oe2203sp2.src.rpm"
+                ]
+            },
+            "database_specific": null
+        },
+        {
+            "package": {
+                "ecosystem": "openEuler-22.03-LTS-SP3",
+                "name": "postgresql-jdbc",
+                "purl": "pkg:rpm/postgresql-jdbc@42.4.1-3.oe2203sp3"
+            },
+            "severity": null,
+            "ranges": [
+                {
+                    "type": "ECOSYSTEM",
+                    "repo": "",
+                    "events": [
+                        {
+                            "introduced": "0",
+                            "fixed": "42.4.1-3.oe2203sp3",
+                            "last_affected": "",
+                            "limit": ""
+                        }
+                    ],
+                    "database_specific": null
+                }
+            ],
+            "versions": null,
+            "ecosystem_specific": {
+                "noarch": [
+                    "postgresql-jdbc-javadoc-42.4.1-3.oe2203sp3.noarch.rpm",
+                    "postgresql-jdbc-42.4.1-3.oe2203sp3.noarch.rpm",
+                    "postgresql-jdbc-help-42.4.1-3.oe2203sp3.noarch.rpm"
+                ],
+                "src": [
+                    "postgresql-jdbc-42.4.1-3.oe2203sp3.src.rpm"
+                ]
+            },
+            "database_specific": null
+        }
+    ],
+    "references": [
+        {
+            "type": "ADVISORY",
+            "url": "https://nvd.nist.gov/vuln/detail/CVE-2024-1597"
+        }
+    ],
+    "credits": null,
+    "database_specific": {
+        "severity": "Critical"
+    }
+}

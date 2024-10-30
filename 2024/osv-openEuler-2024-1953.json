@@ -1,0 +1,76 @@
+{
+    "schema_version": "1.6.0",
+    "id": "OESA-2024-1953",
+    "modified": "2024-08-09T00:00:00Z",
+    "published": "2024-08-09T00:00:00Z",
+    "withdrawn": "",
+    "aliases": null,
+    "related": [
+        "CVE-2024-3864",
+        "CVE-2024-4770",
+        "CVE-2024-5696"
+    ],
+    "summary": "firefox security update",
+    "details": "Mozilla Firefox is a standalone web browser, designed for standards compliance and performance.  Its functionality can be enhanced via a plethora of extensions.\r\n\r\nSecurity Fix(es):\r\n\r\nMemory safety bug present in Firefox 124, Firefox ESR 115.9, and Thunderbird 115.9. This bug showed evidence of memory corruption and we presume that with enough effort this could have been exploited to run arbitrary code. This vulnerability affects Firefox \u0026lt; 125, Firefox ESR \u0026lt; 115.10, and Thunderbird \u0026lt; 115.10.(CVE-2024-3864)\r\n\r\nWhen saving a page to PDF, certain font styles could have led to a potential use-after-free crash. This vulnerability affects Firefox \u0026lt; 126, Firefox ESR \u0026lt; 115.11, and Thunderbird \u0026lt; 115.11.(CVE-2024-4770)\r\n\r\nBy manipulating the text in an `\u0026amp;lt;input\u0026amp;gt;` tag, an attacker could have caused corrupt memory leading to a potentially exploitable crash. This vulnerability affects Firefox \u0026lt; 127, Firefox ESR \u0026lt; 115.12, and Thunderbird \u0026lt; 115.12.(CVE-2024-5696)",
+    "severity": null,
+    "affected": [
+        {
+            "package": {
+                "ecosystem": "openEuler-24.03-LTS",
+                "name": "firefox",
+                "purl": "pkg:rpm/firefox@115.13.0-2.oe2403"
+            },
+            "severity": null,
+            "ranges": [
+                {
+                    "type": "ECOSYSTEM",
+                    "repo": "",
+                    "events": [
+                        {
+                            "introduced": "0",
+                            "fixed": "115.13.0-2.oe2403",
+                            "last_affected": "",
+                            "limit": ""
+                        }
+                    ],
+                    "database_specific": null
+                }
+            ],
+            "versions": null,
+            "ecosystem_specific": {
+                "aarch64": [
+                    "firefox-115.13.0-2.oe2403.aarch64.rpm",
+                    "firefox-debuginfo-115.13.0-2.oe2403.aarch64.rpm",
+                    "firefox-debugsource-115.13.0-2.oe2403.aarch64.rpm"
+                ],
+                "src": [
+                    "firefox-115.13.0-2.oe2403.src.rpm"
+                ],
+                "x86_64": [
+                    "firefox-115.13.0-2.oe2403.x86_64.rpm",
+                    "firefox-debuginfo-115.13.0-2.oe2403.x86_64.rpm",
+                    "firefox-debugsource-115.13.0-2.oe2403.x86_64.rpm"
+                ]
+            },
+            "database_specific": null
+        }
+    ],
+    "references": [
+        {
+            "type": "ADVISORY",
+            "url": "https://nvd.nist.gov/vuln/detail/CVE-2024-3864"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://nvd.nist.gov/vuln/detail/CVE-2024-4770"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://nvd.nist.gov/vuln/detail/CVE-2024-5696"
+        }
+    ],
+    "credits": null,
+    "database_specific": {
+        "severity": "High"
+    }
+}

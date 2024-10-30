@@ -1,0 +1,79 @@
+{
+    "schema_version": "1.6.0",
+    "id": "OESA-2024-2170",
+    "modified": "2024-09-27T00:00:00Z",
+    "published": "2024-09-27T00:00:00Z",
+    "withdrawn": "",
+    "aliases": null,
+    "related": [
+        "CVE-2024-43495"
+    ],
+    "summary": "libarchive security update",
+    "details": "is an open-source BSD-licensed C programming library that  provides streaming access to a variety of different archive formats, including tar, cpio, pax, zip, and ISO9660 images. The distribution  also includes bsdtar and bsdcpio, full-featured implementations of  tar and cpio that use .\r\n\r\nSecurity Fix(es):\r\n\r\nWindows libarchive Remote Code Execution Vulnerability(CVE-2024-43495)",
+    "severity": null,
+    "affected": [
+        {
+            "package": {
+                "ecosystem": "openEuler-24.03-LTS",
+                "name": "libarchive",
+                "purl": "pkg:rpm/libarchive@3.7.1-4.oe2403"
+            },
+            "severity": null,
+            "ranges": [
+                {
+                    "type": "ECOSYSTEM",
+                    "repo": "",
+                    "events": [
+                        {
+                            "introduced": "0",
+                            "fixed": "3.7.1-4.oe2403",
+                            "last_affected": "",
+                            "limit": ""
+                        }
+                    ],
+                    "database_specific": null
+                }
+            ],
+            "versions": null,
+            "ecosystem_specific": {
+                "aarch64": [
+                    "bsdcat-3.7.1-4.oe2403.aarch64.rpm",
+                    "bsdcpio-3.7.1-4.oe2403.aarch64.rpm",
+                    "bsdtar-3.7.1-4.oe2403.aarch64.rpm",
+                    "bsdunzip-3.7.1-4.oe2403.aarch64.rpm",
+                    "libarchive-3.7.1-4.oe2403.aarch64.rpm",
+                    "libarchive-debuginfo-3.7.1-4.oe2403.aarch64.rpm",
+                    "libarchive-debugsource-3.7.1-4.oe2403.aarch64.rpm",
+                    "libarchive-devel-3.7.1-4.oe2403.aarch64.rpm"
+                ],
+                "noarch": [
+                    "libarchive-help-3.7.1-4.oe2403.noarch.rpm"
+                ],
+                "src": [
+                    "libarchive-3.7.1-4.oe2403.src.rpm"
+                ],
+                "x86_64": [
+                    "bsdcat-3.7.1-4.oe2403.x86_64.rpm",
+                    "bsdcpio-3.7.1-4.oe2403.x86_64.rpm",
+                    "bsdtar-3.7.1-4.oe2403.x86_64.rpm",
+                    "bsdunzip-3.7.1-4.oe2403.x86_64.rpm",
+                    "libarchive-3.7.1-4.oe2403.x86_64.rpm",
+                    "libarchive-debuginfo-3.7.1-4.oe2403.x86_64.rpm",
+                    "libarchive-debugsource-3.7.1-4.oe2403.x86_64.rpm",
+                    "libarchive-devel-3.7.1-4.oe2403.x86_64.rpm"
+                ]
+            },
+            "database_specific": null
+        }
+    ],
+    "references": [
+        {
+            "type": "ADVISORY",
+            "url": "https://nvd.nist.gov/vuln/detail/CVE-2024-43495"
+        }
+    ],
+    "credits": null,
+    "database_specific": {
+        "severity": "High"
+    }
+}

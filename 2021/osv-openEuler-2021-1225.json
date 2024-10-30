@@ -1,0 +1,81 @@
+{
+    "schema_version": "1.6.0",
+    "id": "OESA-2021-1225",
+    "modified": "2021-06-22T00:00:00Z",
+    "published": "2021-06-22T00:00:00Z",
+    "withdrawn": "",
+    "aliases": null,
+    "related": [
+        "CVE-2021-23017"
+    ],
+    "summary": "nginx security update",
+    "details": "NGINX is a free, open-source, high-performance HTTP server and reverse proxy, as well as an IMAP/POP3 proxy server.\r\n\r\nSecurity Fix(es):\r\n\r\nA security issue in nginx resolver was identified, which might allow an attacker who is able to forge UDP packets from the DNS server to cause 1-byte memory overwrite, resulting in worker process crash or potential other impact.(CVE-2021-23017)",
+    "severity": null,
+    "affected": [
+        {
+            "package": {
+                "ecosystem": "openEuler-20.03-LTS-SP1",
+                "name": "nginx",
+                "purl": "pkg:rpm/nginx@1.16.1-11.oe1"
+            },
+            "severity": null,
+            "ranges": [
+                {
+                    "type": "ECOSYSTEM",
+                    "repo": "",
+                    "events": [
+                        {
+                            "introduced": "0",
+                            "fixed": "1.16.1-11.oe1",
+                            "last_affected": "",
+                            "limit": ""
+                        }
+                    ],
+                    "database_specific": null
+                }
+            ],
+            "versions": null,
+            "ecosystem_specific": {
+                "aarch64": [
+                    "nginx-mod-mail-1.16.1-11.oe1.aarch64.rpm",
+                    "nginx-mod-http-perl-1.16.1-11.oe1.aarch64.rpm",
+                    "nginx-mod-http-xslt-filter-1.16.1-11.oe1.aarch64.rpm",
+                    "nginx-1.16.1-11.oe1.aarch64.rpm",
+                    "nginx-debugsource-1.16.1-11.oe1.aarch64.rpm",
+                    "nginx-debuginfo-1.16.1-11.oe1.aarch64.rpm",
+                    "nginx-mod-stream-1.16.1-11.oe1.aarch64.rpm",
+                    "nginx-mod-http-image-filter-1.16.1-11.oe1.aarch64.rpm"
+                ],
+                "noarch": [
+                    "nginx-filesystem-1.16.1-11.oe1.noarch.rpm",
+                    "nginx-all-modules-1.16.1-11.oe1.noarch.rpm",
+                    "nginx-help-1.16.1-11.oe1.noarch.rpm"
+                ],
+                "src": [
+                    "nginx-1.16.1-11.oe1.src.rpm"
+                ],
+                "x86_64": [
+                    "nginx-mod-stream-1.16.1-11.oe1.x86_64.rpm",
+                    "nginx-debugsource-1.16.1-11.oe1.x86_64.rpm",
+                    "nginx-debuginfo-1.16.1-11.oe1.x86_64.rpm",
+                    "nginx-mod-http-perl-1.16.1-11.oe1.x86_64.rpm",
+                    "nginx-mod-mail-1.16.1-11.oe1.x86_64.rpm",
+                    "nginx-mod-http-image-filter-1.16.1-11.oe1.x86_64.rpm",
+                    "nginx-1.16.1-11.oe1.x86_64.rpm",
+                    "nginx-mod-http-xslt-filter-1.16.1-11.oe1.x86_64.rpm"
+                ]
+            },
+            "database_specific": null
+        }
+    ],
+    "references": [
+        {
+            "type": "ADVISORY",
+            "url": "https://nvd.nist.gov/vuln/detail/CVE-2021-23017"
+        }
+    ],
+    "credits": null,
+    "database_specific": {
+        "severity": "Critical"
+    }
+}
